@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+    
+        <title>Flex-chess-DOMASHKA</title>
+    
+        <style>
+        .table {
+                outline: 1px solid black;
+                display: flex;
+                width: 920px;
+                height: 920px;
+                background: lightgray;
+                }
+                .first{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    font-weight: bold;
+                }
+                .A{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                
+                }
+                .B{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .C{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .D{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .E{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .F{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .G{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .H{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                }
+                .second{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    font-weight: bold;
+                }
+                .pole1{
+                 height: 102px;
+                width: 102px;
+                font-size: 60px;
+                background: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+                .pole{
+                height: 102px;
+                width: 102px;
+                font-size: 60px;
+                background: gray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+                .leftright{
+                height: 102px;
+                width: 52px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                }
+                .topbottom{
+                height: 52px;
+                width: 102px;
+                font-weight: bold;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+               
+                }
+        </style>
+    </head>
+    <body>
+        <div class="table">
+            <div class="first">
+                <div class="leftright">8</div>
+                <div class="leftright">7</div>
+                <div class="leftright">6</div>
+                <div class="leftright">5</div>
+                <div class="leftright">4</div>
+                <div class="leftright">3</div>
+                <div class="leftright">2</div>
+                <div class="leftright">1</div>
+            </div>
+            <div class="A">
+                <div class="topbottom">A</div>
+                <div class="pole1">&#9820;</div>
+                <div class="pole">&#9823;</div>
+                <div class="pole1"></div>
+                <div class="pole"></div>
+                <div class="pole1"></div>
+                <div class="pole"></div>
+                <div class="pole1">&#9817;</div>
+                <div class="pole">&#9814;</div>
+                <div class="topbottom">A</div>
+            </div>
+            <div class="B">
+                <div class="topbottom">B</div>
+                <div class="pole">&#9822;</div>
+                <div class="pole1">&#9823;</div>
+                <div class="pole"></div>
+                <div class="pole1"></div>
+                <div class="pole"></div>
+                <div class="pole1"></div>
+                <div class="pole">&#9817;</div>
+                <div class="pole1">&#9816;</div>
+                <div class="topbottom">B</div>
+            </div>
+            <div class="C">
+                <div class="topbottom">C</div>
+                <div class="pole1">&#9821;</div>
+                <div class="pole">&#9823;</div>
+                <div class="pole1"></div>
+                <div class="pole"></div>
+                <div class="pole1"></div>
+                <div class="pole"></div>
+                <div class="pole1">&#9817;</div>
+                <div class="pole">&#9815;</div>
+                <div class="topbottom">C</div>
+            </div>
+            <div class="D">
+                <div class="topbottom">D</div>
+                <div class="pole">&#9819;</div>
+                <div class="pole1">&#9823;</div>
+                <div class="pole"></div>
+                <div class="pole1"></div>
+                <div class="pole"></div>
+                <div class="pole1"></div>
+                <div class="pole">&#9817;</div>
+                <div class="pole1">&#9813;</div>
+                <div class="topbottom">D</div>
+            </div>
+            <div class="E">
+                <div class="topbottom">E</div>
+                <div class="pole1">&#9818;</div>
+                <div class="pole">&#9823;</div>
+                <div class="pole1"></div>
+                <div class="pole"></div>
+                <div class="pole1"></div>
+                <div class="pole"></div>
+                <div class="pole1">&#9817;</div>
+                <div class="pole">&#9812;</div>
+                <div class="topbottom">E</div>
+            </div>
+            <div class="F">
+                <div class="topbottom">F</div>
+                <div class="pole">&#9821;</div>
+                <div class="pole1">&#9823;</div>
+                <div class="pole"></div>
+                <div class="pole1"></div>
+                <div class="pole"></div>
+                <div class="pole1"></div>
+                <div class="pole">&#9817;</div>
+                <div class="pole1">&#9815;</div>
+                <div class="topbottom">F</div>
+            </div>
+            <div class="G">
+                <div class="topbottom">G</div>
+                <div class="pole1">&#9822;</div>
+                <div class="pole">&#9823;</div>
+                <div class="pole1"></div>
+                <div class="pole"></div>
+                <div class="pole1"></div>
+                <div class="pole"></div>
+                <div class="pole1">&#9817;</div>
+                <div class="pole">&#9816;</div>
+                <div class="topbottom">G</div>
+            </div>
+            <div class="H">
+                <div class="topbottom">H</div>
+                <div class="pole">&#9820;</div>
+                <div class="pole1">&#9823;</div>
+                <div class="pole"></div>
+                <div class="pole1"></div>
+                <div class="pole"></div>
+                <div class="pole1"></div>
+                <div class="pole">&#9817;</div>
+                <div class="pole1">&#9814;</div>
+                <div class="topbottom">H</div>
+            </div>
+            <div class="second">
+                <div class="leftright">8</div>
+                <div class="leftright">7</div>
+                <div class="leftright">6</div>
+                <div class="leftright">5</div>
+                <div class="leftright">4</div>
+                <div class="leftright">3</div>
+                <div class="leftright">2</div>
+                <div class="leftright">1</div>
+            </div>
+        </div>
+    </body>
+</html>
