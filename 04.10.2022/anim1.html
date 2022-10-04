@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Transforms Vladimir</title>
+        
+        <style>
+            @keyframes mychanges {
+                50% {
+                    transform: perspective(528px) rotateY(90deg);
+                }
+            }
+            .outer {
+                position: relative;
+                padding: 20px 20px 0 20px;
+                width: 188px;
+                height: 528px;
+                margin: 100px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-image: url('./images/dver.jpg');
+                background-size: cover;
+            }
+            .photo {
+                width: 100%;
+                height: 100%;
+                background-image: url('./images/dizain_komnaty.jpg');
+                background-size: cover;
+                background-position: center;
+            }
+            .inner {
+                width: 188px;
+                height: 528px;
+                background-image:url('./images/dver.jpg');
+                transform-origin: 0 50%;
+                transform: perspective(528px) rotateY(0deg);
+                animation: mychanges 5s infinite;
+                position: absolute;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div class="outer">
+            <div class="photo"></div>
+            <div class="inner"></div>
+        </div>
+    </body>
+</html>
