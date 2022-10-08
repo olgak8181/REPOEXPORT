@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <title>My page</title>
+        
+        <style>
+            @font-face {
+                font-family: 'Marck Script';
+                src: url('MarckScript-Regular.woff2') format('woff2');
+                font-weight: normal;
+                font-style: normal;
+                font-display: swap;
+            }
+            html {
+                height: 100%;
+            }
+            body {
+                min-height: 100%;
+                margin: 0;
+                display: grid;
+                grid-template-rows: auto 1fr auto;
+                grid-template-areas: "a" "b" "c" ;
+                font-family: 'Marck Script'
+            }
+            header {
+                height: 100px;
+                background: #E0FFFF;
+                border: 1px solid #DCDCDC;
+                grid-area: a;
+                box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            }
+            main {
+                background: #F0F8FF;
+                grid-area: b;
+            }
+            .outer{
+                width: 1600px;
+                display: grid;
+                gap: 10px;
+                grid-template-rows: auto 1fr;
+                grid-template-areas: 
+                
+                                    "a a a" 
+                                    "b c c";
+            }
+            .myfoto{
+                grid-area: b;
+                margin-left: 40px;
+                margin-top: 20px;
+            }
+            .aboutme{
+                grid-area: c;
+                background: white;
+                border: 1px solid #DCDCDC;
+                border-radius: 20px;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+                padding: 15px;
+                margin-top: -15px;
+            }
+            footer {
+                height: 100px;
+                background: #C0C0C0;
+                grid-area: c;
+                font-size: 20px;
+            }
+            .okrup{
+                margin-left: 20px;
+            }
+            h1 {
+                width: 1600px;
+                margin-left: 20px;
+                grid-area: a;
+                text-align: center;
+                pading: 1px;
+                border: 1px solid #DCDCDC;
+                box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            }
+            .glav {
+                margin-left: 20px;
+                font-size: 25px;
+            }
+            ul {
+                list-style: square;
+            }
+            p{
+                margin-left: 30px;
+            }
+            .foto{
+                width: 310px;
+                height: 310px;
+                padding-left: 10px;
+                padding-top: 10px;
+                border: 1px solid #DCDCDC;
+                border-radius: 10px;
+                box-shadow: 0 0 20px rgba(0,0,0,0.5);
+                margin-left: 20px;
+                margin-top: 20px;
+            }
+        </style>
+    </head>
+    
+    <body>
+               
+        <header>
+             <div class="glav">Главная</div>
+        </header>
+        
+        <main>
+            <h1>Моя первая главная страница</h1>
+            
+            <div class="outer">
+                    
+                    <div class="myfoto">
+                        <div class="foto">
+                            <img src="1foto.jpg"alt="my_portrait"width="300" height="300">
+                        </div>
+                    </div>
+                    <div class="aboutme">
+                        <p><b>Здравствуйте, меня зовут Крупинская Ольга Викторовна, и это моя первая сверстанная страница.</b></p>
+                        <p>В настоящий момент я прохожу обучение по курсу "Frontend разработка"
+                        в учебном центре <a href="https://distant.eduprof.ru/frontend-razrabotka/">"Профессионал"</a></p>
+                        <p><ul>Скоро я буду уметь:
+                            <li>верстать сайты на HTML и CSS;</li>
+                            <li>встраивать сценарии Javascript в HTML-документы;</li>
+                            <li>создавать циклы, функции; определять и вызывать функции;<br>
+                                создавать и обрабатывать массивы; создавать объект;</li>
+                            <li>применять методы работы с промежутками времени;</li>
+                            <li>применять изменение стилей документа;</li>
+                            <li>создавать движущиеся изображения;</li>
+                            <li>применять каскадные таблицы стилей для создания динамических элементов страницы;</li>
+                            <li>изменять фоновый цвет и изображения; осуществлять смену стилей текста и ссылок;</li>
+                            <li>программировать анимацию; создавать выпадающее меню;</li>
+                            <li>применять методы передачи информации из формы;<br>
+                                использовать сценарии JavaScript для проверки форм;</li>
+                            <li>блокировать и скрывать элементы формы;</li>
+                            <li>применять DOM для создания динамических эффектов;</li>
+                            <li>отбирать элементы страницы с помощью селекторов;</li>
+                            <li>манипулировать элементами страницы средствами Pure JS or jQuery;</li>
+                            <li>применять библиотеки JavaScript при разработке сайтов;</li>
+                            <li>применять фреймворки JavaScript при разработке сайтов.</li>
+                        </ul></p>
+                        <p>Планирую не останавливаться на достигнутом!</p>
+                    </div>
+            </div>
+        </main>
+        <footer>
+            <div class="okrup">Copyright &#169; OKrupinskaya 2022</div>
+        </footer>
+    </body>
+</html>
