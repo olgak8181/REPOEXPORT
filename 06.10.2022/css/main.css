@@ -83,64 +83,182 @@ footer {
 main {
     flex: auto;
     margin-top: -116px;
-    
-    
-    /*background: #5A98D0;
-    box-shadow: 5px 10px 20px rgba (523, 110, 173, .2);
-    border-radius: 10px;*/
+
 }
 
 
 
 
 
-main :first-child {
-    display: flex;
+.container1 {
     height: 768px;
-    flex-direction: column;
-    flex-wrap: wrap;
-
-      
     background: linear-gradient(0deg, #EBF3FB 0%, #EBF3FB 8.84%, rgba(152, 195, 232, 0)31.12%);
 }
-.kart{
-    width: 553px;
-    height: 481px;
-    margin-left: 82px;
-    margin-right: 100px;
-    background: url('../images/illustration.png') center center no-repeat;
+.container1 .container{
+    padding: 183px 0 94px;
+    height: 491px;
+    background: url('../images/illustration.png') right 183px no-repeat;
 }
+
 h1{
     width: 518px;
     height: 148px;
     font: normal 300 64px/74px 'Roboto';
     text-align: left;
     letter-spacing: 0.04em;
-    margin-top: 189px;
-    margin-left: 94px;
+    margin-top: 10px;
+    
 }
 main p{
-    width: 436px;
+    width: 437px;
     height: 82px;
-    font: normal 300 16px/26px 'Roboto';
+    font: normal 400 16px/26px 'Roboto';
     text-align: left;
-    letter-spacing: 0.04em;
-    margin-top: 369px;
-    margin-left: 94px;
-    margin-right: 834px;
+    letter-spacing: 0.05em;
+    margin-top: 32px;
+    color: #1F3F68;
+    opacity: 0.6;
 }
 main button {
     width: 226px;
     height: 56px;
-    background: #5a98d0;
-    color: #fff;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba (523, 110, 173, .2);
+    border-radius: 10px;
+    color: white;
+    margin-top: 71px;
+}
+main h2{
+    padding: 64px 113px;
+    font: normal 300 36px/46px 'Roboto';
+    letter-spacing: 0.05em;
+}
+.triorow{
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0px 93px 0px 113px;
+    
+}
+.tri1{
+    width: 359px;
+    height: 480px;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177,0.2);
+    border-radius: 10px;
+    background: url('../images/1.png') center 43px no-repeat;
+}
+.triorow h4{
+    margin-top: 216px;
+    margin-left: 32px;
+    font: normal 400 20px/30px 'Roboto';
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+}
+.triorow h5{
+    margin-top: 14px;
+    margin-left: 32px;
+    font: normal 400 16px/26px 'Roboto';
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+.triorow p{
+    margin-top: 30px;
+    margin-left: 32px;
+    font: normal 400 14px/30px 'Roboto';
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+}
+.tri2{
+    width: 359px;
+    height: 480px;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177,0.2);
+    border-radius: 10px;
+    background: url('../images/group 15.png') center 43px no-repeat;
+}
+.tri3{
+    width: 359px;
+    height: 480px;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177,0.2);
+    border-radius: 10px;
+    background: url('../images/2 20.png') center 43px no-repeat;
+}
+a{
+    display: block;
+    width: 23px;
+    height: 22px;
+    float: right;
+    margin-top: -80px;
+    margin-right: 200px;
+}
+main h3{
+    padding: 54px 218px 32px 8px;
+    font: normal 300 36px/46px 'Roboto';
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+.container5 h5{
+    padding: 0px 203px 64px 187px;
+    font: normal 400 16px/26px 'Roboto';
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #222222;
 }
 
-
-
-
-
-
+.smart{
+    display: grid;
+    width: 1140px;
+    gap: 32px;
+    grid-template-areas: "a a" "b c";
+    padding:  0px 0px 122px 8px;
+    
+    
+}
+.smart1{
+    width: 1140px;
+    height: 480px;
+    border-radius: 10px;
+    grid-area: a;
+    background: url('../images/home.png') no-repeat;
+}
+.smart1 h4{
+    font: normal 400 32px/46px 'Roboto';
+    letter-spacing: 0.05em;
+    text-align: right;
+    color: white;
+    padding: 64px 64px ;
+}
+.smart2{
+    width: 554px;
+    height: 417px;
+    border-radius: 10px;
+    grid-area: b;
+    background: url('../images/phones.png') no-repeat;
+}
+.smart2 h5{
+    font: normal 400 28px/46px 'Roboto';
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: white;
+    margin-left: 32px ;
+    margin-top: 32px;
+}
+.smart3{
+    width: 554px;
+    height: 417px;
+    border-radius: 10px;
+    grid-area: c;
+    background: url('../images/car.png') no-repeat;
+}    
+.smart3 h6{
+    
+    font: normal 400 28px/46px 'Roboto';
+    letter-spacing: 0.05em;
+    text-align: left;
+    color: white;
+    margin-left: 32px ;
+    margin-top: 32px;
+}
 
 /* header */
 header .container {
@@ -205,6 +323,7 @@ ol li::before {
     float: left;
     content: '';
 }
+
 
 
 /* main */
