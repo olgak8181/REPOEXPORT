@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="utf-8">
+        
+        <title>Operstors</title>
+        
+        <script>
+        
+            let quest = Math.floor(Math.random() * 100 +1);
+            
+            while (true) {
+                let ans = +prompt ('Введите число от 1 до 100');
+                
+                if (isNaN(ans)) {
+                 alert ('Я просил ввести число');
+                 continue;
+                }
+                
+                if (quest == ans){
+                    alert ('Вы угадали');
+                    break;
+                    } else if (quest > ans) {
+                    alert ('надо больше');
+                } else {
+                    alert ('Надо меньше');
+                }
+            }
+        </script>
+    </head>
+    <body></body>
+</html>
