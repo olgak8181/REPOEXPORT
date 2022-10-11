@@ -107,7 +107,7 @@ h1{
     text-align: left;
     letter-spacing: 0.04em;
     margin-top: 10px;
-    
+    color: #1F3F68;
 }
 main p{
     width: 437px;
@@ -129,6 +129,7 @@ main button {
     margin-top: 71px;
 }
 main h2{
+    position: relative;
     padding: 64px 113px;
     font: normal 300 36px/46px 'Roboto';
     letter-spacing: 0.05em;
@@ -136,9 +137,10 @@ main h2{
 .triorow{
     display: grid;
     gap: 32px;
-    grid-template-columns: 1fr 1fr 1fr;
-    padding: 0px 93px 0px 113px;
-    
+    grid-template-columns: 359px 359px 359px;
+    justify-content: center;
+    margin-left: 113px;
+    margin-right: 113px;
 }
 .tri1{
     width: 359px;
@@ -183,7 +185,7 @@ main h2{
     border-radius: 10px;
     background: url('../images/2 20.png') center 43px no-repeat;
 }
-a{
+main a{
     display: block;
     width: 23px;
     height: 22px;
@@ -192,13 +194,20 @@ a{
     margin-right: 200px;
 }
 main h3{
-    padding: 54px 218px 32px 8px;
+    margin-right: 113px;
+    margin-bottom: 32px;
+    margin-left: 113px;
+    margin-top: 54px;
     font: normal 300 36px/46px 'Roboto';
     letter-spacing: 0.05em;
     text-align: center;
 }
+
+
 .container5 h5{
-    padding: 0px 203px 64px 187px;
+    margin-right: 113px;
+    margin-bottom: 64px;
+    margin-left: 113px;
     font: normal 400 16px/26px 'Roboto';
     letter-spacing: 0.05em;
     text-align: center;
@@ -207,14 +216,14 @@ main h3{
 
 .smart{
     display: grid;
-    width: 1140px;
     gap: 32px;
     grid-template-areas: "a a" "b c";
-    padding:  0px 0px 122px 8px;
-    
+    margin-bottom: 122px;
+    justify-content: center;
     
 }
 .smart1{
+    
     width: 1140px;
     height: 480px;
     border-radius: 10px;
@@ -326,6 +335,9 @@ ol li::before {
 
 
 
+
+
+
 /* main */
 
 /* adaptive */
@@ -364,6 +376,197 @@ ol li::before {
         height: 10px;
         width: 40px;
     }
+    .container1 .container{
+    padding: 188px 0 32px;
+    height: 472px;
+    background: url('../images/illustration1.png') right 368px no-repeat;
+    }
+    h1{
+    width: 506px;
+    height: 148px;
+    text-align: left;
+    letter-spacing: 0.04em;
+    }
+    main p{
+    width: 425px;
+    height: 82px;
+    text-align: left;
+    letter-spacing: 0.05em;
+    margin-top: 32px;
+    }
+    main button {
+    width: 220px;
+    height: 56px;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba (523, 110, 173, .2);
+    border-radius: 10px;
+    color: white;
+    margin-top: 72px;
+    }
+    main h2{
+    position: relative;
+    padding: 83px 32px 64px 32px;
+    font: normal 300 36px/46px 'Roboto';
+    letter-spacing: 0.05em;
+    text-align: center;
+    }
+
+    .triorow{
+    display: grid;
+    grid-template-columns: 336px;
+    grid-template-rows: 451px 451px 451px;
+    grid-template-areas: "a" "b" "c";
+    justify-content: center;
+    }
+    .tri1{
+        width: 336px;
+        height: 451px;
+        box-shadow: 5px 20px 50px rgba(16, 112, 177,0.2);
+        border-radius: 10px;
+        background: url('../images/1.png') center 43px no-repeat;
+        grid-area: a;
+    }
+    .triorow h4{
+        margin-top: 201px;
+        margin-left: 32px;
+        font: normal 400 20px/30px 'Roboto';
+        letter-spacing: 0.05em;
+        color: #1F3F68;
+        
+    }
+    
+    .triorow h5{
+        margin-top: 13px;
+        margin-left: 32px;
+        font: normal 400 16px/26px 'Roboto';
+        letter-spacing: 0.05em;
+        color: #1F3F68;
+        opacity: 0.6;
+    }
+    /*.tri1 h5{
+        margin-left: 30px;
+        margin-right: 55px;
+        
+    }*/
+    .triorow p{
+        margin-top: 26px;
+        margin-left: 32px;
+        font: normal 400 14px/30px 'Roboto';
+        letter-spacing: 0.05em;
+        color: #5A98D0;
+    }
+    .tri2{
+        width: 336px;
+        height: 451px;
+        box-shadow: 5px 20px 50px rgba(16, 112, 177,0.2);
+        border-radius: 10px;
+        background: url('../images/group 15.png') center 43px no-repeat;
+        grid-area: b;
+    }
+    .tri3{
+        width: 336px;
+        height: 451px;
+        box-shadow: 5px 20px 50px rgba(16, 112, 177,0.2);
+        border-radius: 10px;
+        background: url('../images/2 20.png') center 43px no-repeat;
+        grid-area: c;
+    }
+    
+    main h3{
+        padding: 127px 32px 32px 32px;
+        font: normal 300 36px/46px 'Roboto';
+        letter-spacing: 0.05em;
+        text-align: center;
+    }
+    
+    .container5 h5{
+    width: 520px;
+    
+    margin-right: auto;
+    margin-bottom: 64px;
+    margin-left: auto;
+    font: normal 400 16px/26px 'Roboto';
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #222222;
+    }
+    
+    
+    
+    
+    .smart{
+    display: grid;
+    gap: 32px;
+    grid-template-areas: "a a" "b c";
+    margin-bottom: 122px;
+    justify-content: center;
+    
+}
+    .smart1{
+        
+        width: 705px;
+        height: 297px;
+        border-radius: 10px;
+        grid-area: a;
+        background: url('../images/home.png') no-repeat;
+        background-size: cover;
+    }
+    .smart1 h4{
+        font: normal 400 32px/46px 'Roboto';
+        letter-spacing: 0.05em;
+        text-align: right;
+        color: white;
+        padding: 64px 64px ;
+    }
+    .smart2{
+        width: 336px;
+        height: 253px;
+        border-radius: 10px;
+        grid-area: b;
+        background: url('../images/phones.png') no-repeat;
+        background-size: cover;
+    }
+    .smart2 h5{
+        font: normal 400 28px/46px 'Roboto';
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: white;
+        margin-left: 20px ;
+        margin-top: 20px;
+    }
+    .smart3{
+        width: 336px;
+        height: 253px;
+        border-radius: 10px;
+        grid-area: c;
+        background: url('../images/car.png') no-repeat;
+        background-size: cover;
+    }    
+    .smart3 h6{
+        
+        font: normal 400 28px/46px 'Roboto';
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: white;
+        margin-left: 20px ;
+        margin-top: 20px;
+    }
+       
+        
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
     
 }
 @media screen and (max-width:767px) {
