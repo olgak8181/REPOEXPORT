@@ -338,6 +338,10 @@ ol li::before {
 
 
 
+
+
+
+
 /* main */
 
 /* adaptive */
@@ -376,6 +380,12 @@ ol li::before {
         height: 10px;
         width: 40px;
     }
+    
+    .container1 {
+    height: 768px;
+    background: linear-gradient(0deg, #DFEDF8 0%, #EBF3FB 8.84%, rgba(152, 195, 232, 0)31.12%);
+}
+    
     .container1 .container{
     padding: 188px 0 32px;
     height: 472px;
@@ -618,5 +628,58 @@ ol li::before {
         height: 20px;
         width: 20px;
     }
+    
+    .container1 {
+    height: 376px;
+    background: linear-gradient(0deg, #DAEAF7 0%, #EBF3FB 8.84%, rgba(152, 195, 232, 0)31.12%);
+    }
+    .container1 .container{
+    height: 245px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 92px 16px; 16px;
+    margin: 0px;
+    background: none;
+    }
+    h1{
+    width: 343px;
+    height: 76px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    font: normal 300 32px/38px 'Roboto';
+    margin: 0px 16px 12px 16px;
+    color: #1F3F68;
+    }
+    main p{
+    width: 343px;
+    height: 96px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    margin: auto;
+    margin: 12px 16px 32px 16px;
+    }
+    main button {
+    width: 108px;
+    height: 28px;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba (523, 110, 173, .2);
+    border-radius: 10px;
+    color: white;
+    font: normal 300 12px/26px 'Roboto';    
+    margin: 0px 134px 0px 134px;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     
 }
