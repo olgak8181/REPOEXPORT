@@ -89,7 +89,6 @@ main {
 
 
 
-
 .container1 {
     height: 768px;
     background: linear-gradient(0deg, #EBF3FB 0%, #EBF3FB 8.84%, rgba(152, 195, 232, 0)31.12%);
@@ -147,7 +146,8 @@ main h2{
     height: 480px;
     box-shadow: 5px 20px 50px rgba(16, 112, 177,0.2);
     border-radius: 10px;
-    background: url('../images/1.png') center 43px no-repeat;
+    background: url('../images/1.png') no-repeat;
+    background-position: 59px 44px;
 }
 .triorow h4{
     margin-top: 216px;
@@ -159,6 +159,7 @@ main h2{
 .triorow h5{
     margin-top: 14px;
     margin-left: 32px;
+    margin-right: 33px;
     font: normal 400 16px/26px 'Roboto';
     letter-spacing: 0.05em;
     color: #1F3F68;
@@ -171,19 +172,31 @@ main h2{
     letter-spacing: 0.05em;
     color: #5A98D0;
 }
+.tri1 h5{
+    margin-right: 59px;
+    margin-top: 14px;
+    margin-left: 32px;
+    font: normal 400 16px/26px 'Roboto';
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
 .tri2{
     width: 359px;
     height: 480px;
     box-shadow: 5px 20px 50px rgba(16, 112, 177,0.2);
     border-radius: 10px;
-    background: url('../images/group 15.png') center 43px no-repeat;
+    background: url('../images/group 15.png') no-repeat;
+    background-position: 115px 43px;
 }
 .tri3{
     width: 359px;
     height: 480px;
     box-shadow: 5px 20px 50px rgba(16, 112, 177,0.2);
     border-radius: 10px;
-    background: url('../images/2 20.png') center 43px no-repeat;
+    background: url('../images/2 20.png') no-repeat;
+    background-position: 80px 48px;
 }
 main a{
     display: block;
@@ -192,6 +205,8 @@ main a{
     float: right;
     margin-top: -80px;
     margin-right: 200px;
+    text-decoration: none;
+    cursor: pointer;
 }
 main h3{
     margin-right: 113px;
@@ -205,9 +220,9 @@ main h3{
 
 
 .container5 h5{
-    margin-right: 113px;
+    margin-right: 195px;
     margin-bottom: 64px;
-    margin-left: 113px;
+    margin-left: 195px;
     font: normal 400 16px/26px 'Roboto';
     letter-spacing: 0.05em;
     text-align: center;
@@ -382,63 +397,64 @@ ol li::before {
     }
     
     .container1 {
-    height: 768px;
-    background: linear-gradient(0deg, #DFEDF8 0%, #EBF3FB 8.84%, rgba(152, 195, 232, 0)31.12%);
+        height: 768px;
+        background: linear-gradient(0deg, #DFEDF8 0%, #EBF3FB 8.84%, rgba(152, 195, 232, 0)31.12%);
 }
     
     .container1 .container{
-    padding: 188px 0 32px;
-    height: 472px;
-    background: url('../images/illustration1.png') right 368px no-repeat;
+        padding: 188px 0 32px;
+        height: 472px;
+        background: url('../images/illustration1.png') right 368px no-repeat;
     }
     h1{
-    width: 506px;
-    height: 148px;
-    text-align: left;
-    letter-spacing: 0.04em;
+        width: 506px;
+        height: 148px;
+        text-align: left;
+        letter-spacing: 0.04em;
     }
     main p{
-    width: 425px;
-    height: 82px;
-    text-align: left;
-    letter-spacing: 0.05em;
-    margin-top: 32px;
+        width: 425px;
+        height: 82px;
+        text-align: left;
+        letter-spacing: 0.05em;
+        margin-top: 32px;
     }
     main button {
-    width: 220px;
-    height: 56px;
-    background: #5A98D0;
-    box-shadow: 5px 10px 20px rgba (523, 110, 173, .2);
-    border-radius: 10px;
-    color: white;
-    margin-top: 72px;
+        width: 220px;
+        height: 56px;
+        background: #5A98D0;
+        box-shadow: 5px 10px 20px rgba (523, 110, 173, .2);
+        border-radius: 10px;
+        color: white;
+        margin-top: 72px;
     }
     main h2{
-    position: relative;
-    padding: 83px 32px 64px 32px;
-    font: normal 300 36px/46px 'Roboto';
-    letter-spacing: 0.05em;
-    text-align: center;
+        padding: 83px 209px 64px 209px;
+        font: normal 300 36px/46px 'Roboto';
+        letter-spacing: 0.05em;
+        text-align: center;
     }
 
     .triorow{
-    display: grid;
-    grid-template-columns: 336px;
-    grid-template-rows: 451px 451px 451px;
-    grid-template-areas: "a" "b" "c";
-    justify-content: center;
+        display: grid;
+        grid-template-columns: 336px;
+        grid-template-rows: 451px 451px 451px;
+        grid-template-areas: "a" "b" "c";
+        justify-content: center;
     }
     .tri1{
         width: 336px;
         height: 451px;
         box-shadow: 5px 20px 50px rgba(16, 112, 177,0.2);
         border-radius: 10px;
-        background: url('../images/1.png') center 43px no-repeat;
+        background: url('../images/11.png') no-repeat;
+        background-position: 59px 44px;
         grid-area: a;
     }
+
     .triorow h4{
         margin-top: 201px;
-        margin-left: 32px;
+        margin-left: 31px;
         font: normal 400 20px/30px 'Roboto';
         letter-spacing: 0.05em;
         color: #1F3F68;
@@ -447,19 +463,38 @@ ol li::before {
     
     .triorow h5{
         margin-top: 13px;
-        margin-left: 32px;
+        margin-left: 31px;
         font: normal 400 16px/26px 'Roboto';
         letter-spacing: 0.05em;
         color: #1F3F68;
         opacity: 0.6;
     }
-    /*.tri1 h5{
+    .tri1 h5{
+        margin-right: 59px;
+        margin-top: 14px;
         margin-left: 30px;
         margin-right: 55px;
-        
-    }*/
+        font: normal 400 16px/26px 'Roboto';
+        letter-spacing: 0.05em;
+        color: #1F3F68;
+        opacity: 0.6;
+}
     .triorow p{
         margin-top: 26px;
+        margin-left: 32px;
+        font: normal 400 14px/30px 'Roboto';
+        letter-spacing: 0.05em;
+        color: #5A98D0;
+    }
+    .tri1 p{
+        margin-top: 16px;
+        margin-left: 32px;
+        font: normal 400 14px/30px 'Roboto';
+        letter-spacing: 0.05em;
+        color: #5A98D0;
+    }
+    .tri1 p{
+        margin-top: 10px;
         margin-left: 32px;
         font: normal 400 14px/30px 'Roboto';
         letter-spacing: 0.05em;
@@ -470,7 +505,8 @@ ol li::before {
         height: 451px;
         box-shadow: 5px 20px 50px rgba(16, 112, 177,0.2);
         border-radius: 10px;
-        background: url('../images/group 15.png') center 43px no-repeat;
+        background: url('../images/22.png') no-repeat;
+        background-position: 110px 40px;
         grid-area: b;
     }
     .tri3{
@@ -500,15 +536,12 @@ ol li::before {
     text-align: center;
     color: #222222;
     }
-    
-    
-    
-    
+
     .smart{
     display: grid;
     gap: 32px;
     grid-template-areas: "a a" "b c";
-    margin-bottom: 122px;
+    margin-bottom: 109px;
     justify-content: center;
     
 }
@@ -561,9 +594,6 @@ ol li::before {
         margin-left: 20px ;
         margin-top: 20px;
     }
-       
-        
- 
 
 
 
@@ -572,12 +602,6 @@ ol li::before {
 
 
 
-
-
-
-
- 
-    
 }
 @media screen and (max-width:767px) {
     .container {
@@ -630,56 +654,226 @@ ol li::before {
     }
     
     .container1 {
-    height: 376px;
-    background: linear-gradient(0deg, #DAEAF7 0%, #EBF3FB 8.84%, rgba(152, 195, 232, 0)31.12%);
+        height: 376px;
+        background: linear-gradient(0deg, #DAEAF7 0%, #EBF3FB 8.84%, rgba(152, 195, 232, 0)31.12%);
     }
     .container1 .container{
-    height: 245px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 92px 16px; 16px;
-    margin: 0px;
-    background: none;
+        height: 245px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 92px 16px; 16px;
+        margin: 0px;
+        background: none;
     }
     h1{
-    width: 343px;
-    height: 76px;
-    text-align: center;
-    letter-spacing: 0.04em;
-    font: normal 300 32px/38px 'Roboto';
-    margin: 0px 16px 12px 16px;
-    color: #1F3F68;
+        width: 343px;
+        height: 76px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        font: normal 300 32px/38px 'Roboto';
+        margin: 0px 16px 12px 16px;
+        color: #1F3F68;
     }
     main p{
-    width: 343px;
-    height: 96px;
-    text-align: center;
-    letter-spacing: 0.05em;
-    margin: auto;
-    margin: 12px 16px 32px 16px;
+        width: 343px;
+        height: 96px;
+        text-align: center;
+        letter-spacing: 0.05em;
+        margin: auto;
+        margin: 12px 16px 32px 16px;
     }
     main button {
-    width: 108px;
-    height: 28px;
-    background: #5A98D0;
-    box-shadow: 5px 10px 20px rgba (523, 110, 173, .2);
-    border-radius: 10px;
-    color: white;
-    font: normal 300 12px/26px 'Roboto';    
-    margin: 0px 134px 0px 134px;
+        width: 108px;
+        height: 28px;
+        background: #5A98D0;
+        box-shadow: 5px 10px 20px rgba (523, 110, 173, .2);
+        border-radius: 10px;
+        color: white;
+        font: normal 300 12px/26px 'Roboto';    
+        margin: 0px 134px 0px 134px;
+        }
+    main h2{
+        height: 55px;
+        margin: 48px 189px 32px 189px;
+        padding: 0px;
+        font: normal 300 24px/28px 'Roboto';
+        letter-spacing: normal;
+        text-align: center;
+        }
+    
+    
+    .triorow{
+        display: grid;
+        grid-template-columns: 336px;
+        grid-template-rows: 451px 451px 451px;
+        grid-template-areas: "a" "b" "c";
+        justify-content: center;
+        }
+    .tri1{
+        width: 335px;
+        height: 451px;
+        box-shadow: 5px 20px 50px rgba(16, 112, 177,0.2);
+        border-radius: 10px;
+        background: url('../images/11.png') no-repeat;
+        background-position: 59px 44px;
+        grid-area: a;
+    }
+
+    .triorow h4{
+        margin-top: 201px;
+        margin-left: 31px;
+        font: normal 400 20px/30px 'Roboto';
+        letter-spacing: 0.05em;
+        color: #1F3F68;
+        
     }
     
+    .triorow h5{
+        margin-top: 13px;
+        margin-left: 31px;
+        font: normal 400 16px/26px 'Roboto';
+        letter-spacing: 0.05em;
+        color: #1F3F68;
+        opacity: 0.6;
+    }
+    .tri1 h5{
+        margin-right: 59px;
+        margin-top: 14px;
+        margin-left: 30px;
+        margin-right: 55px;
+        font: normal 400 16px/26px 'Roboto';
+        letter-spacing: 0.05em;
+        color: #1F3F68;
+        opacity: 0.6;
+}
+    .triorow p{
+        margin-top: 26px;
+        margin-left: 32px;
+        font: normal 400 14px/30px 'Roboto';
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #5A98D0;
+    }
+    .tri1 p{
+        margin-top: 10px;
+        margin-left: 30px;
+        font: normal 400 14px/30px 'Roboto';
+        text-align: left;
+        letter-spacing: 0.05em;
+        color: #5A98D0;
+    }
+    .tri2{
+        width: 336px;
+        height: 451px;
+        box-shadow: 5px 20px 50px rgba(16, 112, 177,0.2);
+        border-radius: 10px;
+        background: url('../images/22.png') no-repeat;
+        background-position: 110px 40px;
+        grid-area: b;
+    }
+    .tri3{
+        width: 336px;
+        height: 451px;
+        box-shadow: 5px 20px 50px rgba(16, 112, 177,0.2);
+        border-radius: 10px;
+        background: url('../images/2 20.png') center 43px no-repeat;
+        grid-area: c;
+    }
+    main a{
+        display: block;
+        width: 23px;
+        height: 22px;
+        float: right;
+        margin-top: -124px;
+        margin-right: 200px;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    main h3{
+        /*width: 343px;
+        margin-right: 17px;
+        margin-left: 17px;
+        margin-bottom: 32px;
+        padding: 0px;*/
+        padding: 64px 17px 32px 17px;
+        font: normal 300 24px/28px 'Roboto';
+        letter-spacing: 0.05em;
+        text-align: center;
+    }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    .container5 h5{
+        width: 343px;
+        margin-right: auto;
+        margin-bottom: 82px;
+        margin-left: auto;
+        font: normal 400 16px/26px 'Roboto';
+        letter-spacing: 0.05em;
+        text-align: center;
+        color: #222222;
+    }
+        
+        
+    .smart{
+        display: grid;
+        gap: 17px;
+        grid-template-columns: 343px;
+        grid-template-rows: 145px 255px 262px;
+        grid-template-areas: "a" "b" "c";
+        justify-content: center;
+         margin-bottom: 64px;
+    }
+
+
+    .smart1{
+        
+        width: 343px;
+        height: 145px;
+        border-radius: 10px;
+        grid-area: a;
+        background: url('../images/home.png') no-repeat;
+        background-size: cover;
+       
+    }
+    .smart1 h4{
+        font: normal 400 16px/19px 'Roboto';
+        letter-spacing: 0.05em;
+        text-align: right;
+        color: white;
+        padding: 16px 16px ;
+    }
+    .smart2{
+        width: 343px;
+        height: 255px;
+        border-radius: 10px;
+        grid-area: b;
+        background: url('../images/phones.png') no-repeat;
+        background-size: cover;
+    }
+    .smart2 h5{
+        font: normal 400 16px/19px 'Roboto';
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: white;
+        margin-left: 16px ;
+        margin-top: 26px;
+    }
+    .smart3{
+        width: 343px;
+        height: 262px;
+        border-radius: 10px;
+        grid-area: c;
+        background: url('../images/car.png') no-repeat;
+        background-size: cover;
+    }    
+    .smart3 h6{
+        
+        font: normal 400 16px/19px 'Roboto';
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: white;
+        margin-left: 16px ;
+        margin-top: 16px;
+    }
+
 }
