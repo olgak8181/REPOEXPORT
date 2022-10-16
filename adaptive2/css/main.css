@@ -99,38 +99,6 @@ main {
     background: url('../images/illustration.png') right 183px no-repeat;
 }
 
-
-
-
-.containercontact{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 379px;
-    background: url('../images/mask.png') center 129px no-repeat;
-    background-size: cover;
-    margin-bottom: 57px;
-    
-}
-.containercontact h2{
-    
-    padding: 185px 0px 0px 0px;
-    margin-bottom: 16px;
-    font: normal 500 44px/74px 'Roboto';
-    letter-spacing: 0.04em;
-    color: white;
-}
-.containercontact p{
-    width: 780px;
-    margin-top: 0px;
-    margin-bottom: 44px;
-    font: normal 400 20px/30px 'Roboto';
-    letter-spacing: 0.04em;
-    color: rgba(255, 255, 255, 0.6);
-    text-align: center;
-}
-
-
 h1{
     width: 518px;
     height: 148px;
@@ -315,18 +283,49 @@ main h3{
     margin-left: 32px ;
     margin-top: 32px;
 }
+
+/*for contacts*/
+
+
+.containercontact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 379px;
+    background: url('../images/mask.png') center 129px no-repeat;
+    background-size: cover;
+    margin-bottom: 57px;
+    
+}
+.containercontact h2{
+    
+    padding: 185px 0px 0px 0px;
+    margin-bottom: 16px;
+    font: normal 500 44px/74px 'Roboto';
+    letter-spacing: 0.04em;
+    color: white;
+}
+.containercontact p{
+    width: 780px;
+    margin-top: 0px;
+    margin-bottom: 44px;
+    font: normal 400 20px/30px 'Roboto';
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
 .containerblock2{
     display: grid;
     gap: 101px;
+    height: 800px;
     grid-template-columns: 301px 540px;
     justify-content: center;
-    align-items: ctnter;
+    align-items: center;
     justify-content: center;
-    margin-left: 112px;
-    margin-right: 112px;
+    margin-left: 212px;
+    margin-right: 212px;
     margin-bottom: 96px;
 }
-
 .address{
     width: 301px;
     height: 668px;
@@ -338,10 +337,10 @@ main h3{
     text-align: left;
     color: #1F3F68;
     margin: 237px 0px 24px 0px;
-    font-variant: small-caps;
+    text-transform: uppercase;
     letter-spacing: 0.04em;
 }
-.p1{
+.pa1{
     font: 300 16px/26px 'Roboto';
     height: 53px;
     letter-spacing: 0.04em;
@@ -351,30 +350,29 @@ main h3{
     letter-spacing: 0.04em;
     opacity: 0.6;
 }
-
 .address h4{
     font: 500 20px/30px 'Roboto';
     letter-spacing: 0.04em;
     text-align: left;
     color: #1F3F68;
     margin-bottom: 24px;
-    font-variant: small-caps;
+    text-transform: uppercase;
     letter-spacing: 0.04em;
 }
-.p2{
+.pa2{
     margin-top: 0px;
     margin-bottom: 16px;
     height: 26px;
     width: 200px;
 }
-.p3{
+.pa3{
     margin-top: 0px;
     margin-bottom: 40px;
     height: 26px;
     width: 200px;
 }
 
-/*.address a{
+.telef{
     display: inline-block;
     height: 26px;
     width: 200px;
@@ -382,9 +380,9 @@ main h3{
     color: #1F3F68;
     text-decoration: none;
     text-align: left;
-    margin: 0px;*/
+    margin: 0px;
 }
-.tele::before{
+.telef::before{
     width: 24px;
     height: 24px;
     float: left;
@@ -397,14 +395,25 @@ main h3{
     text-align: left;
     color: #1F3F68;
     margin-bottom: 24px;
-    font-variant: small-caps;
+    text-transform: uppercase;
     letter-spacing: 0.04em;
 }
-.p4{
+.pa4{
     margin-top: 0px;
     margin-bottom: 16px;
     height: 26px;
     width: 200px;
+    font: 400 16px/26px 'Roboto';
+}
+.cite{
+    display: inline-block;
+    height: 26px;
+    width: 200px;
+    font-weight: 300px;
+    color: #1F3F68;
+    text-decoration: none;
+    text-align: left;
+    margin: 0px;
 }
 .cite::before{
     width: 24px;
@@ -413,23 +422,98 @@ main h3{
     content: url('../images/web.png');
     margin-right: 16px;
 }
-.p5{
+.pa5{
     margin-top: 0px;
-    margin-bottom: 40px;
     height: 26px;
     width: 200px;
+    font: 400 16px/26px 'Roboto';
 }
-.mail::before{
+.mails{
+    display: inline-block;
+    height: 26px;
+    width: 200px;
+    font-weight: 300px;
+    color: #1F3F68;
+    text-decoration: none;
+    text-align: left;
+    margin: 0px;
+}
+.mails::before{
     width: 24px;
     height: 24px;
     float: left;
     content: url('../images/mail.png');
     margin-right: 16px;
 }
+.send{
+    height: 800px;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    padding: 0px 56px 0px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.send h3{
+    font: 500 20px/30px 'Roboto';
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #1F3F68;
+    margin: 56px 0px 16px 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+form{
+    display: block;
+    width: 428px;
+    height: 610px;
+}
+.send label{
+    display: block;
+    font: 400 16px/30px 'Roboto';
+    color: #1F3F68;
+    opacity: 0.8;
+    margin: 32px 0px 8px;
+}
+.send .ramka{
+    display: block;
+    width: 428px;
+    height: 72px;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    padding: 20px 35px;
+    border-radius: 10px;
+    font: 300 16px/30px 'Roboto';
+    color: #1F3F68;
+    opacity: 0.2;
+}
+.send .ramka2{
+    display: block;
+    width: 428px;
+    height: 144px;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    padding: 20px 35px;
+    border-radius: 10px;
+    font: 300 16px/30px 'Roboto';
+    color: #1F3F68;
+    opacity: 0.2;
+}
+.send button{
+    display: block;
+    width: 428px;
+    height: 72px;
+    margin-top: 72px;
+    font: 500 16px/26px 'Roboto';
+    letter-spacing: 0.04em;
+    color: white;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    text-transform: uppercase;
+}
 
-
-
-
+.containerkarta{
+    height: 480px;
+    background: url('../images/karta.png') center no-repeat;
+    margin-bottom: 112px;
+}
 /* header */
 header .container {
     height: 48px;
@@ -740,15 +824,143 @@ ol li::before {
         margin-left: 20px ;
         margin-top: 20px;
     }
+    
+    
+/*contacts*/
 
 
-
-
-
-
-
+.containercontact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 349px;
+    background: url('../images/mask.png') center 99px no-repeat;
+    background-size: cover;
+    margin-bottom: 64px;
+}
+.containercontact h2{
+    
+    padding: 149px 0px 0px 0px;
+    margin-bottom: 16px;
+    font: normal 500 44px/74px 'Roboto';
+    letter-spacing: 0.04em;
+    color: white;
+}
+.containercontact p{
+    width: 520px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font: normal 400 20px/30px 'Roboto';
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+.containerblock2{
+    display: grid;
+    gap: 64px;
+    height: 1520px;
+    grid-template-columns: 520px;
+    grid-template-rows: 676px 780px;
+    grid-template-areas: "a" "b";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-left: 124px;
+    margin-right: 124px;
+    margin-bottom: 64px;
+}
+.address{
+    width: 301px;
+    height: 676px;
+    background: url('../images/address.png') top no-repeat;
+    grid-area: a;
+}
+.address h3{
+    font: 500 20px/30px 'Roboto';
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #1F3F68;
+    margin: 245px 0px 24px 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0px;
+}
+.send{
+    height: 780px;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    padding: 0px 56px 0px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    grid-area: b;
+}
+.send h3{
+    font: 500 20px/30px 'Roboto';
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #1F3F68;
+    margin: 56px 0px 16px 0px;
+    padding: 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+form{
+    display: block;
+    width: 413px;
+    height: 610px;
+}
+.send .ramka{
+    display: block;
+    width: 412px;
+    height: 71px;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    padding: 20px 42px;
+    border-radius: 10px;
+    font: 300 16px/30px 'Roboto';
+    color: #1F3F68;
+    opacity: 0.2;
+}
+.send .ramka2{
+    display: block;
+    width: 428px;
+    height: 144px;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    padding: 20px 35px;
+    border-radius: 10px;
+    font: 300 16px/30px 'Roboto';
+    color: #1F3F68;
+    opacity: 0.2;
+}
+.send button{
+    display: block;
+    width: 412px;
+    height: 71px;
+    margin-top: 72px;
+    font: 500 16px/26px 'Roboto';
+    letter-spacing: 0.04em;
+    color: white;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    text-transform: uppercase;
+}
+.containerkarta{
+    height: 392px;
+    background: url('../images/karta.png') center no-repeat;
+    margin-bottom: 64px;
+}
 
 }
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:767px) {
     .container {
         margin: 0 16px;
@@ -937,11 +1149,6 @@ ol li::before {
         cursor: pointer;
     }
     main h3{
-        /*width: 343px;
-        margin-right: 17px;
-        margin-left: 17px;
-        margin-bottom: 32px;
-        padding: 0px;*/
         padding: 64px 17px 32px 17px;
         font: normal 300 24px/28px 'Roboto';
         letter-spacing: 0.05em;
@@ -1021,5 +1228,206 @@ ol li::before {
         margin-left: 16px ;
         margin-top: 16px;
     }
+
+
+
+
+
+.containercontact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 381px;
+    background: url('../images/mask.png') center 83px no-repeat;
+    background-size: cover;
+    margin-bottom: 64px;
+}
+.containercontact h2{
+    width: 163px;
+    padding: 131px 0px 0px 0px;
+    margin-bottom: 32px;
+    font: normal 500 24px/28px 'Roboto';
+    letter-spacing: 0.04em;
+    color: white;
+}
+.containercontact p{
+    width: 341px;
+    margin-top: 0px;
+    margin-bottom: 61px;
+    font: normal 400 16px/30px 'Roboto';
+    letter-spacing: 0.04em;
+    color: rgba(255, 255, 255, 0.6);
+    text-align: center;
+}
+.containerblock2{
+    display: grid;
+    gap: 32px;
+    height: 1208px;
+    grid-template-columns: 343px;
+    grid-template-rows: 662px 514px;
+    grid-template-areas: "a" "b";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-bottom: 32px;
+}
+.address{
+    width: 301px;
+    height: 662px;
+    background: url('../images/address.png') top no-repeat;
+    grid-area: a;
+}
+.address h3{
+    font: 500 20px/30px 'Roboto';
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #1F3F68;
+    margin: 245px 0px 24px 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    padding: 0px;
+}
+.pa1{
+    font: 300 16px/26px 'Roboto';
+    height: 53px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #1F3F68;
+    margin: 0px 0px 32px 0px;
+    letter-spacing: 0.04em;
+    opacity: 0.6;
+}
+.address h4{
+    font: 500 20px/30px 'Roboto';
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #1F3F68;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+.pa2{
+    margin-top: 0px;
+    margin-bottom: 16px;
+    height: 26px;
+    width: 180px;
+}
+.pa3{
+    margin-top: 0px;
+    margin-bottom: 40px;
+    height: 26px;
+    width: 180px;
+}
+.address h5{
+    font: 500 20px/30px 'Roboto';
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #1F3F68;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+.pa4{
+    margin-top: 0px;
+    margin-bottom: 16px;
+    height: 26px;
+    width: 180px;
+    font: 400 16px/26px 'Roboto';
+}
+.pa5{
+    margin-top: 0px;
+    height: 26px;
+    width: 180px;
+    font: 400 16px/26px 'Roboto';
+}
+.send{
+    height: 515px;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    padding: 0px 36px 0px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.send h3{
+    width: 217px;
+    font: 500 16px/30px 'Roboto';
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #1F3F68;
+    margin: 36px 0px 10px 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+form{
+    display: block;
+    width: 272px;
+    height: 470px;
+}
+.send .ramka{
+    display: block;
+    width: 272px;
+    height: 46px;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    padding: 23px 14px;
+    border-radius: 10px;
+    font: 300 14px/30px 'Roboto';
+    color: #1F3F68;
+    opacity: 0.2;
+}
+.send .ramka2{
+    display: block;
+    width: 272px;
+    height: 93px;
+    border: 1px solid #356EAD;
+    box-sizing: border-box;
+    padding: 23px 14px;
+    border-radius: 10px;
+    font: 300 14px/30px 'Roboto';
+    color: #1F3F68;
+    opacity: 0.2;
+}
+
+.send label{
+    display: block;
+    font: 400 14px/30px 'Roboto';
+    color: #1F3F68;
+    opacity: 0.8;
+    margin: 20px 0px 6px;
+}
+.send button{
+    display: block;
+    width: 272px;
+    height: 47px;
+    margin-top: 47px;
+    margin-left: 0px;
+    margin-bottom: 36px;
+    font: 500 16px/26px 'Roboto';
+    letter-spacing: 0.04em;
+    color: white;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    text-transform: uppercase;
+}
+.containerkarta{
+    height: 349px;
+    background: url('../images/karta.png') center no-repeat;
+    margin-bottom: 64px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
