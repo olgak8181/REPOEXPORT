@@ -127,12 +127,22 @@ main button {
     color: white;
     margin-top: 71px;
 }
+.container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
 main h2{
-    position: relative;
-    padding: 64px 113px;
+    width: 1140px;
+    height: 41px;
+    margin: 64px 0px 64px 0px;
+    padding: 0px;
     font: normal 300 36px/46px 'Roboto';
     letter-spacing: 0.05em;
+    text-align: center;
 }
+
 .triorow{
     display: grid;
     gap: 32px;
@@ -208,21 +218,27 @@ main a{
     text-decoration: none;
     cursor: pointer;
 }
+.container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 main h3{
-    margin-right: 113px;
-    margin-bottom: 32px;
-    margin-left: 113px;
-    margin-top: 54px;
+    margin: 64px 0px 32px 0px; 
     font: normal 300 36px/46px 'Roboto';
     letter-spacing: 0.05em;
     text-align: center;
 }
 
-
+.container5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container5 h5{
-    margin-right: 195px;
-    margin-bottom: 64px;
-    margin-left: 195px;
+    width: 750px;
+    height: 52px;
+    margin: 0px 0px 64px 0px;
     font: normal 400 16px/26px 'Roboto';
     letter-spacing: 0.05em;
     text-align: center;
@@ -298,15 +314,16 @@ main h3{
     
 }
 .containercontact h2{
-    
-    padding: 185px 0px 0px 0px;
-    margin-bottom: 16px;
+    width: 240px;
+    height: 74px;
+    margin: 185px 0px 16px 0px;
     font: normal 500 44px/74px 'Roboto';
     letter-spacing: 0.04em;
     color: white;
 }
 .containercontact p{
     width: 780px;
+    height: 60px;
     margin-top: 0px;
     margin-bottom: 44px;
     font: normal 400 20px/30px 'Roboto';
@@ -658,12 +675,21 @@ ol li::before {
         color: white;
         margin-top: 72px;
     }
+    .container2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
     main h2{
-        padding: 83px 209px 64px 209px;
+        width: 704px;
+        height: 90px;
+        margin: 83px 0px 64px 0px;
+        padding: 0px;
         font: normal 300 36px/46px 'Roboto';
         letter-spacing: 0.05em;
         text-align: center;
-    }
+        }
 
     .triorow{
         display: grid;
@@ -747,25 +773,33 @@ ol li::before {
         background: url('../images/2 20.png') center 43px no-repeat;
         grid-area: c;
     }
-    
+    .container3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
     main h3{
-        padding: 127px 32px 32px 32px;
-        font: normal 300 36px/46px 'Roboto';
-        letter-spacing: 0.05em;
-        text-align: center;
-    }
-    
-    .container5 h5{
+    width: 704px;
+    height: 46px;
+    margin: 127px 0px 32px 0px; 
+    font: normal 300 36px/46px 'Roboto';
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+.container5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container5 h5{
     width: 520px;
-    
-    margin-right: auto;
-    margin-bottom: 64px;
-    margin-left: auto;
+    height: 78px;
+    margin: 0px 0px 64px 0px;
     font: normal 400 16px/26px 'Roboto';
     letter-spacing: 0.05em;
     text-align: center;
     color: #222222;
-    }
+}
 
     .smart{
     display: grid;
@@ -839,15 +873,16 @@ ol li::before {
     margin-bottom: 64px;
 }
 .containercontact h2{
-    
-    padding: 149px 0px 0px 0px;
-    margin-bottom: 16px;
+    width: 240px;
+    height: 74px;
+    margin: 149px 0px 16px 0px;
     font: normal 500 44px/74px 'Roboto';
     letter-spacing: 0.04em;
     color: white;
 }
 .containercontact p{
     width: 520px;
+    height: 90px;
     margin-top: 0px;
     margin-bottom: 50px;
     font: normal 400 20px/30px 'Roboto';
@@ -855,6 +890,8 @@ ol li::before {
     color: rgba(255, 255, 255, 0.6);
     text-align: center;
 }
+
+
 .containerblock2{
     display: grid;
     gap: 64px;
@@ -906,7 +943,7 @@ ol li::before {
 form{
     display: block;
     width: 413px;
-    height: 610px;
+    /*height: 610px;*/
 }
 .send .ramka{
     display: block;
@@ -922,7 +959,7 @@ form{
 }
 .send .ramka2{
     display: block;
-    width: 428px;
+    width: 412px;
     height: 144px;
     border: 1px solid #356EAD;
     box-sizing: border-box;
@@ -1051,12 +1088,18 @@ form{
         font: normal 300 12px/26px 'Roboto';    
         margin: 0px 134px 0px 134px;
         }
+    .container2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
     main h2{
+        width: 341px;
         height: 55px;
-        margin: 48px 189px 32px 189px;
+        margin: 48px 0px 32px 0px;
         padding: 0px;
         font: normal 300 24px/28px 'Roboto';
-        letter-spacing: normal;
         text-align: center;
         }
     
@@ -1148,25 +1191,34 @@ form{
         text-decoration: none;
         cursor: pointer;
     }
+    .container3{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
     main h3{
-        padding: 64px 17px 32px 17px;
+        width: 343px;
+        height: 28px;
+        margin: 64px 0px 32px 0px; 
         font: normal 300 24px/28px 'Roboto';
         letter-spacing: 0.05em;
         text-align: center;
-    }
-    
-    .container5 h5{
-        width: 343px;
-        margin-right: auto;
-        margin-bottom: 82px;
-        margin-left: auto;
+}
+.container5{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.container5 h5{
+        width: 360px;
+        height: 104px;
+        margin: 0px 0px 82px 0px;
         font: normal 400 16px/26px 'Roboto';
         letter-spacing: 0.05em;
         text-align: center;
         color: #222222;
-    }
-        
-        
+}
+
     .smart{
         display: grid;
         gap: 17px;
@@ -1237,21 +1289,22 @@ form{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 381px;
+    height: 333px;
     background: url('../images/mask.png') center 83px no-repeat;
     background-size: cover;
     margin-bottom: 64px;
 }
 .containercontact h2{
-    width: 163px;
-    padding: 131px 0px 0px 0px;
-    margin-bottom: 32px;
+    width: 165px;
+    height: 28px;
+    margin: 131px 0px 32px 0px;
     font: normal 500 24px/28px 'Roboto';
     letter-spacing: 0.04em;
     color: white;
 }
 .containercontact p{
     width: 341px;
+    height: 90px;
     margin-top: 0px;
     margin-bottom: 61px;
     font: normal 400 16px/30px 'Roboto';
@@ -1259,12 +1312,13 @@ form{
     color: rgba(255, 255, 255, 0.6);
     text-align: center;
 }
+
 .containerblock2{
     display: grid;
     gap: 32px;
-    height: 1208px;
+    height: 1250px;
     grid-template-columns: 343px;
-    grid-template-rows: 662px 514px;
+    grid-template-rows: 662px 555px;
     grid-template-areas: "a" "b";
     justify-content: center;
     align-items: center;
@@ -1343,7 +1397,7 @@ form{
     font: 400 16px/26px 'Roboto';
 }
 .send{
-    height: 515px;
+    height: 555px;
     box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
     padding: 0px 36px 0px;
     box-sizing: border-box;
@@ -1362,7 +1416,7 @@ form{
 form{
     display: block;
     width: 272px;
-    height: 470px;
+    height: 450px;
 }
 .send .ramka{
     display: block;
@@ -1394,7 +1448,7 @@ form{
     font: 400 14px/30px 'Roboto';
     color: #1F3F68;
     opacity: 0.8;
-    margin: 20px 0px 6px;
+    margin: 20px 0px 5px;
 }
 .send button{
     display: block;
