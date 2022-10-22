@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    
+    <title>Пример к ТЗ</title>
+    
+    <style>
+        #vvod, #btn2, #cntr, #predvvod, #malo, #mnogo, #ugadal {
+            display: none;
+        }
+        div{
+            background-color: #E0FFFF;
+            width: 500px;
+            height: 400px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <h1>Игра "Угадай число"</h1>
+    <p id="predvvod">Введите число от 1 до 100</p>
+    <p id="prig">Для начала игры нажмите кнопку</p>
+    <p id="malo">Надо больше</p>
+    <p id="mnogo">Надо меньше</p>
+    <p id="ugadal">Вы угадали</p>
+    <input type="text" id="vvod">
+    <button type="button" id="btn1">Начало игры</button>
+    <button type="button" id="btn2">OK</button>
+    
+    <p id="cntr"></p>
+    </div>
+    <script>
+        let counter = 0;
+        let summ = Math.floor(Math.random() * 100 +1);
+        let num = document.getElementById('vvod').value;
+        
+        document.getElementById('btn1').onclick = function(){
+            document.getElementById('btn1').style.display = "none";
+            document.getElementById('btn2').style.display = "inline-block";
+            document.getElementById('vvod').style.display = "inline-block";
+            document.getElementById('predvvod').style.display = "inline-block";
+            document.getElementById('prig').style.display = "none";
+            document.getElementById('cntr').style.display = "block";
+            counter = 0;
+            document.getElementById('cntr').innerHTML = "Количество попыток: " + counter;
+        }
+        document.getElementById('btn2').onclick = function(){
+            counter++;
+            if (!isNaN(num) && num == summ) {
+                document.getElementById('btn1').style.display = "inline-block";
+                document.getElementById('btn2').style.display = "none";
+                document.getElementById('vvod').style.display = "none";
+                document.getElementById('cntr').style.display = "none";
+                document.getElementById('cntr').innerHTML = "Вы угадали число с" + counter + "попыток. Сыграем еще раз?";
+            } else if (!isNaN(num) && num > summ){
+                document.getElementById('mnogo').style.display = "inline-block";
+                document.getElementById('cntr').innerHTML = "Количество попыток: " + counter;
+                alert(document.getElementById('vvod').value);
+            } else {
+                /*document.getElementById('mnogo').style.display = "inline-block*/
+                document.getElementById('malo').style.display = "inline-block";
+                document.getElementById('cntr').innerHTML = "Количество попыток: " + counter;
+                alert(document.getElementById('vvod').value);
+                
+            }
+        }
+    </script>
+</body>
+</html>
