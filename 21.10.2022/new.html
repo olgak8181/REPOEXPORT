@@ -3,17 +3,84 @@
 <head>
     <meta charset="utf-8">
     
-    <title>Пример к ТЗ</title>
+    <title>Домашка Угадай число</title>
     
     <style>
-        #vvod, #btn2, #cntr, #predvvod, #malo, #mnogo, #ugadal {
+        #vvod, #btn2, #btn3, #cntr, #predvvod, #malo, #mnogo, #ugadal {
             display: none;
         }
         div{
-            background-color: #E0FFFF;
-            width: 500px;
-            height: 400px;
-            border: 1px solid black;
+            background-color: #F0FFFF;
+            width: 800px;
+            height: 600px;
+            border: 10px solid #E6E6FA;
+            border-radius: 40px;
+            box-shadow: 5px 20px 50px rgba(0, 0, 0,0.5);
+            position: relative;
+            margin: auto;
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+        }
+        #prig {
+            font-weight: bold;
+            font-size: 30px;
+            margin-top: 100px;
+            text-align: center;
+        }
+        #btn1, #btn3 {
+            font-variant: small-caps;
+            width: 200px;
+            font-size: 30px;
+            background-color: #FFFAFA;
+            border-radius: 20px;
+            box-shadow: 10px 10px 40px rgba(0, 0, 0,0.5);
+            border: 5px solid #E6E6FA;
+            margin-left: 300px;
+            margin-top: 60px;
+        }
+        #btn2 {
+            font-variant: small-caps;
+            width: 100px;
+            font-size: 30px;
+            background-color: #7FFFD4;
+            border-radius: 20px;
+            box-shadow: 10px 10px 40px rgba(0, 0, 0,0.5);
+            border: 5px solid #708090;
+            margin-left: 350px;
+            margin-top: 50px;
+        }
+        #predvvod {
+            width: 100%;
+            font-weight: bold;
+            font-size: 30px;
+            margin-top: 70px;
+            text-align: center;
+        }
+        #vvod {
+            width: 200px;
+            font-size: 25px;
+            margin-left: 300px;
+            margin-top: 50px;
+            line-height: 30px;
+            border-radius: 10px;
+            box-shadow: 10px 10px 40px rgba(0, 0, 0,0.5);
+        }
+        #cntr {
+            width: 100%;
+            text-align: center;
+            margin-top: 60px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        #malo, #mnogo {
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 25px;
+            color: #FF4500;
+            
         }
     </style>
 </head>
@@ -22,12 +89,16 @@
     <h1>Игра "Угадай число"</h1>
     <p id="predvvod">Введите число от 1 до 100</p>
     <p id="prig">Для начала игры нажмите кнопку</p>
-    <p id="malo">Надо больше</p>
-    <p id="mnogo">Надо меньше</p>
+    
     <p id="ugadal">Вы угадали</p>
     <input type="text" id="vvod">
-    <button type="button" id="btn1">Начало игры</button>
+    <p id="malo">Маловато, надо больше</p>
+    <p id="mnogo">Многовато, надо меньше</p>
+    <button type="button" id="btn1">начало игры</button>
     <button type="button" id="btn2">OK</button>
+    
+    <button type="button" id="btn3">начало игры</button>
+    
     <p id="cntr"></p>
     </div>
     <script>
@@ -41,6 +112,7 @@
             document.getElementById('predvvod').style.display = "inline-block";
             document.getElementById('prig').style.display = "none";
             document.getElementById('cntr').style.display = "block";
+            
             counter = 0;
             document.getElementById('cntr').innerHTML = "Количество попыток: " + counter;
         }
@@ -53,11 +125,17 @@
                
             }
             if (num == summ) {
-                document.getElementById('btn1').style.display = "inline-block";
+                
+                document.getElementById('vvod').value = "";
+                document.getElementById('btn3').style.display = "inline-block";
                 document.getElementById('btn2').style.display = "none";
                 document.getElementById('vvod').style.display = "none";
-                document.getElementById('cntr').style.display = "none";
-                document.getElementById('cntr').innerHTML = "Вы угадали число с" + counter + "попыток. Сыграем еще раз?";
+                document.getElementById('malo').style.display = "none";
+                document.getElementById('mnogo').style.display = "none";
+                document.getElementById('predvvod').style.display = "none";
+                document.getElementById('cntr').style.display = "inline-block";
+                document.getElementById('cntr').innerHTML = "Вы угадали число с " + counter + " попыток. Сыграем еще раз?";
+                
                 
             } else if (num > summ){
                 document.getElementById('mnogo').style.display = "inline-block";
@@ -72,6 +150,19 @@
             }
             
         }
+        
+        /*document.getElementById('btn3').onclick = function(){
+        let summ = Math.floor(Math.random() * 100 +1);
+            document.getElementById('btn3').style.display = "none";
+            document.getElementById('btn2').style.display = "inline-block";
+            document.getElementById('vvod').style.display = "inline-block";
+            document.getElementById('predvvod').style.display = "inline-block";
+            document.getElementById('prig').style.display = "none";
+            document.getElementById('cntr').style.display = "block";
+            counter = 0;
+            document.getElementById('cntr').innerHTML = "Количество попыток: " + counter;
+        }*/
+        
     </script>
 </body>
 </html>
