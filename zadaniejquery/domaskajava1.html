@@ -1,36 +1,113 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Min</title>
+    <head>
+        <meta charset="utf-8">
         
-</head>
-<body>
-
-<!--<div></div>-->
-
-<div style="width: 150px"; height: 150px"; background: green"></div>
-
-<input name="in1" class="class1 class2">
-<input name="in2">
-<textarea name "tex1" class="class1 class2"></textarea>
-<h1 id="h1" class="hello">Hello, world!</h1>
-<h1 id="h2" class="hello">Hello, world!</h1>
-<h1 id="h3">Hello, world!</h1>
-<button id="btn1">click me</button>
-<button id="btn2">trigger event1</button>
-<p>loremloremloremloremloremloremloremloremlorem
-    loremloremloremloremloremloremloremloremlorem
-    loremloremloremloremloremloremloremloremlorem
-    loremloremloremloremloremloremloremloremlorem
-    loremloremloremloremloremloremloremloremlorem
-    loremloremloremloremloremloremloremloremlorem
-</p>
-<div style="width: 150px; height: 150px; background: green; position: absolute"></div>
-
-
-<script src="jquery-3.6.1.min.js"></script>
-<script src="first.js"></script>
-</body>
+        <title>My page</title>
+        
+        <style>
+        body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+       #div1 {
+            background-color: #F0FFFF;
+            width: 800px;
+            height: 600px;
+            border: 5px solid #E6E6FA;
+            border-radius: 40px;
+            box-shadow: 5px 20px 50px rgba(0, 0, 0,0.5);
+            position: relative;
+            margin: auto;
+        }
+        h1{
+            text-align: center;
+            font-size: 40px;
+        }
+        #privet {
+            font-weight: bold;
+            font-size: 30px;
+            margin-top: 100px;
+            text-align: center;
+        }
+        #poka {
+            font-weight: bold;
+            font-size: 30px;
+            margin-top: 80px;
+            text-align: center;
+            color: maroon;
+        }
+        #btn1 {
+            font-variant: small-caps;
+            width: 200px;
+            font-size: 30px;
+            background-color: #FFFAFA;
+            border-radius: 20px;
+            box-shadow: 10px 10px 40px rgba(0, 0, 0,0.5);
+            border: 5px solid #E6E6FA;
+            margin-left: 300px;
+            margin-top: 60px;
+        }
+        #btn2 {
+            font-variant: small-caps;
+            width: 100px;
+            font-size: 30px;
+            background-color: #FFFAFA;
+            border-radius: 20px;
+            box-shadow: 10px 10px 40px rgba(0, 0, 0,0.5);
+            border: 5px solid #DCDCDC;
+            margin-left: 250px;
+            margin-top: 50px;
+        }
+        #div2 {
+            background-color: #FDF5E6;
+            width: 600px;
+            height: 300px;
+            border: 5px solid #DCDCDC;
+            border-radius: 40px;
+            box-shadow: 5px 20px 60px rgba(0, 0, 0,0.5);
+            position: fixed;
+            top:20%;
+            left: 35%;
+            opacity: 1;
+            z-index: 99999;
+            
+        }
+        #podlog {
+            display: none;
+        }
+        #podlog::before {
+            content: '';
+            background: #000;
+            position: fixed; 
+            left: 0;
+            top: 0;
+            width: 100%; 
+            height: 100%;
+            opacity: 0.7;
+            z-index: 9999;
+        }
+        
+        </style>
+    </head>
+    
+    <body>
+        <div id="div1">
+            <h1>Создание модального окна</h1>
+            <p id="privet">Для открытия модального окна нажмите кнопку</p>
+            <button type="button" id="btn1">открыть окно</button>
+       </div>
+       <div id="podlog">
+            <div id="div2">
+                <p id="poka">Чтобы закрыть окно нажмите кнопку</p>
+                <button type="button" id="btn2">OK</button>
+            </div>
+        </div>
+        <script src="jquery-3.6.1.min.js"></script>
+        <script src="first.js"></script>
+    </body>
 </html>
+
+
