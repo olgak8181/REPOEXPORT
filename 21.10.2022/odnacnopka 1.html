@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="utf-8">
@@ -10,10 +10,10 @@
             display: none;
         }
         div{
-            background-color: #F0FFFF;
+            background-color: #E6E6FA;
             width: 800px;
             height: 600px;
-            border: 10px solid #E6E6FA;
+            border: 10px solid #E0FFFF;
             border-radius: 40px;
             box-shadow: 5px 20px 50px rgba(0, 0, 0,0.5);
             position: relative;
@@ -36,7 +36,7 @@
             background-color: #FFFAFA;
             border-radius: 20px;
             box-shadow: 10px 10px 40px rgba(0, 0, 0,0.5);
-            border: 5px solid #E6E6FA;
+            border: 5px solid #E0FFFF;
             margin-left: 300px;
             margin-top: 60px;
         }
@@ -47,7 +47,7 @@
             background-color: #7FFFD4;
             border-radius: 20px;
             box-shadow: 10px 10px 40px rgba(0, 0, 0,0.5);
-            border: 5px solid #708090;
+            border: 5px solid #E0FFFF;
             margin-left: 350px;
             margin-top: 50px;
         }
@@ -103,35 +103,31 @@
     </div>
     <script>
         let counter = 0;
-        
-        /*let summ2 = Math.floor(Math.random() * 100 +1);*/
+        let summ;
         let num;
         document.getElementById('btn1').onclick = function(){
-        
+            summ = Math.floor(Math.random() * 100 +1);
             document.getElementById('btn1').style.display = "none";
             document.getElementById('btn2').style.display = "inline-block";
             document.getElementById('vvod').style.display = "inline-block";
             document.getElementById('predvvod').style.display = "inline-block";
             document.getElementById('prig').style.display = "none";
             document.getElementById('cntr').style.display = "block";
-            
             counter = 0;
             document.getElementById('cntr').innerHTML = "Количество попыток: " + counter;
         }
-        let summ = Math.floor(Math.random() * 100 +1);
+        
         document.getElementById('btn2').onclick = function () {
-
             let num = document.getElementById('vvod').value;
             num = +num;
             counter++;
             if (isNaN(num)){
                 alert ('Необходимо ввести число');
-               
             }
             if (num == summ) {
                 
                 document.getElementById('vvod').value = "";
-                document.getElementById('btn3').style.display = "inline-block";
+                document.getElementById('btn1').style.display = "inline-block";
                 document.getElementById('btn2').style.display = "none";
                 document.getElementById('vvod').style.display = "none";
                 document.getElementById('malo').style.display = "none";
@@ -150,21 +146,8 @@
                 document.getElementById('mnogo').style.display = "none";
                 document.getElementById('malo').style.display = "inline-block";
                 document.getElementById('cntr').innerHTML = "Количество попыток: " + counter;
-
             }
             
-        }
-        
-        document.getElementById('btn3').onclick = function(){
-        summ = Math.floor(Math.random() * 100 +1);
-            document.getElementById('btn3').style.display = "none";
-            document.getElementById('btn2').style.display = "inline-block";
-            document.getElementById('vvod').style.display = "inline-block";
-            document.getElementById('predvvod').style.display = "inline-block";
-            document.getElementById('prig').style.display = "none";
-            document.getElementById('cntr').style.display = "block";
-            counter = 0;
-            document.getElementById('cntr').innerHTML = "Количество попыток: " + counter;
         }
         
         
