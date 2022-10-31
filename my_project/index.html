@@ -34,8 +34,8 @@
             <section class="container">
                 <div class="cont3">
                     <nav class="topmenu">
-                        <a href="index.html"><span>Главная страница</span></a>
-                        <a href="#"><span>Каталог</span></a>
+                        <a href="index.html" class="glavstr"><span>Главная страница</span></a>
+                        <a href="catalog.html"><span>Каталог</span></a>
                         <a href="#"><span>Товар</span></a>
                         <a href="#"><span>Корзина</span></a>
                         <a href="#"><span>Контакты</span></a>
@@ -48,7 +48,11 @@
             <!-- action block -->
             <section class="action">
                 <div class="container">
-                    <p class="nasha">При покупке смартфона Xiaomi 12T Pro умный браслет Mi Smart Band 7 в подарок</p>
+                    <p class="nasha">
+                        <a href="#">При покупке смартфона Xiaomi 12T Pro умный браслет Mi Smart Band 7 в подарок! </a>
+                   
+                    <button type="button">купить</button>
+                     </p>
                     <p class="end">
                         До окончания акции осталось:
                         <span class="actiontimer" data-actionend="2022-11-10T12:00:00">&nbsp;</span>
@@ -56,20 +60,28 @@
                 </div>
             </section>
             <!-- /action block -->
-            <!-- slider block -->
+            
             <section class="slider" id="slider1">
                 <div class="slider_desk">
-                    <div class="slider_block">
-                    
-                        <img src="images/1.png" alt="pic 1">
+                    <div class="slider_block img1">
+                        <div>
+                            <a href="#"><b>POCO Watch</b> Заряжены на спорт 100+ режимов тренировок Водонепроницаемость 5 атм Подробнее </a>
+                        </div>
+                        <img src="images/whatch.png" alt="whatch">
                     </div>
                     
-                    <div class="slider_block">
-                        <img src="images/2.png" alt="pic 2">
+                    <div class="slider_block img2">
+                        <div>
+                            <a href="#"><b>Xiaomi Smart Band 7 Pro</b> Новый уровень стиля Более 150 циферблатов Подробнее </a>
+                        </div>
+                        <img src="images/smart.png" alt="smart">
                     </div>
                     
-                    <div class="slider_block">
-                        <img src="images/3.png" alt="pic 3">
+                    <div class="slider_block img3">
+                        <div>
+                            <a href="#"><b>Xiaomi Water Ionic Hair Ddryer H500</b> Глубоко увлажняет волосы, обеспечивая их блеск и гладкость Подробнее </a>
+                        </div>
+                        <img src="images/fen.png" alt="fen">
                     </div>
                 </div>
                 
@@ -79,42 +91,61 @@
                 
                 <div class="slider_points"></div>
             </section>
-            <!-- /slider block -->
-            <!-- slider block -->
-            <section class="slider" id="slider2">
-                <div class="slider_desk">
-                    <div class="slider_block" style="background:red">
-                        <p>Some text without pictures.</p>
-                        <p>Some text without pictures.</p>
-                        <p>Some text without pictures.</p>
+          <!-- slider block -->
+            <section class="container">
+                <div class="anons">
+                    <div class="poco">
+                        <div>
+                            <a href="#"><b>POCO M5</b> 90 Гц дисплей FHD+ DynamicSwitch Подробнее </a>
+                        </div>
+                        <img src="images/poco.png" alt="poco">
                     </div>
-                    
-                    <div class="slider_block" style="background:green">
-                        <p>Some text without pictures.</p>
-                        <p>Some text without pictures.</p>
-                        <p>Some text without pictures.</p>
+                    <div class="pods">
+                        <div>
+                            <a href="#"><b>Redmi Buds 3</b> Превосходное качество звука  Подробнее </a>
+                        </div>
+                        <img src="images/pods.png" alt="pods">
                     </div>
-                    
-                    <div class="slider_block" style="background:blue">
-                        <p>Some text without pictures.</p>
-                        <p>Some text without pictures.</p>
-                        <p>Some text without pictures.</p>
+                    <div class="plan">
+                        <div>
+                            <a href="#"><b>Redmi Pad</b> 90 Гц  Аккумулятор 8000 мАч Подробнее </a>
+                        </div>
+                        <img src="images/plan.png" alt="plant">
                     </div>
                 </div>
-                
-                <button type="button" class="to_left icon"></button>
-                
-                <button type="button" class="to_right icon"></button>
-                
-                <div class="slider_points"></div>
             </section>
-            <!-- /slider block -->
-            <section class="container">Какой-нибудь контент</section>
         </main>
         
         <footer>
-            <section class="container">Меню столбиками</section>
-            <section class="container">Строка копирайта</section>
+            <section class="container stolbiki">
+                <ul>Компания:
+                    <li>О нас</li>
+                    <li>Новости</li>
+                    <li>Акции</li>
+                    <li>Наши магазины</li>
+                    <li>Политика компании</li>
+                </ul>
+                <ul>Продукция:
+                    <li>Смартфоны</li>
+                    <li>Планшеты</li>
+                    <li>Самокаты</li>
+                    <li>Умные часы и браслеты</li>
+                    <li>Товары для красоты</li>
+                </ul>
+                <ul>Покупателям:
+                    <li>Частые вопросы</li>
+                    <li>Доставка и оплата</li>
+                    <li>Кредит и рассрочка</li>
+                    <li>Гарантия</li>
+                </ul>
+                <ul>Наши контакты:
+                    <li class="phone">495-000-00-00</li>
+                    <li class="pochta">info@mail.ru</li>
+                    <li class="social"></li>
+                </ul>
+            </section>
+            <div class="liner"></div>
+            <section class="container copy">Copyright &#169; OKrupinskaya 2022</section>
         </footer>
     </body>
 </html>

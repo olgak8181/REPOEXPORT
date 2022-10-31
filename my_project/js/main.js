@@ -1,4 +1,7 @@
 /* variables */
+let citylist = ['Москва', 'Немосква', 'Караганда', 'Магадан', 'Люберцы', 'Севастополь', 'Ярославль', 'Вологда', 'Владивосток', 'Барнаул', 'Петрозаводск', 'Самара', 'Саратов', 'Тверь', 'Вашингтон', 'Париж', 'Пермь', 'Екатеринбург', 'Новосибирск', 'Калининград'];
+let rangemin = 0;
+let rangemax = 300;
 
 /* functions */
 function getModalWindow(idname) {
@@ -49,10 +52,23 @@ function multiple(num, word1, word2, word3) {
 $(function(){
     $('#city').click(function(){
         getModalWindow('citymodal');
-        $('.modal').append('<h1>Выберите город:</h1><p>Москва</p><p>Владимир</p><p>Рязань</p><p>Санкт-Петербург</p><p>Тула</p>');
+        $('.modal').append('<h1>Выберите город:</h1><input type="text" id="citysearch" placeholder="Введите часть названия города..."><div class="columns"></div>');
+        for (let city of citylist) {
+            $('.modal .columns').append('<p>' + city + '</p>');
+        }
         $('.modal p').click(function(){
             $('#city span').html($(this).html());
             dropModalWindow();
+        });
+        $('#citysearch').on('input', function(){
+            let namepart = $('#citysearch').val().toLowerCase();
+            $('.modal p').each(function(){
+                if (!this.innerHTML.toLowerCase().includes(namepart)) {
+                    this.style.display = 'none';
+                } else {
+                    this.style.display = 'block';
+                }
+            });
         });
     });
     
@@ -66,6 +82,103 @@ $(function(){
     $('.slider').each(function(){
         makeSlider(this.id, 2000);
     });
+    
+    if ($('.catmenu li li').length) {
+        if ($('.catmenu.simple').length) { // если мы хотим простейший аккордеон без сложной анимации
+            $('.catmenu > ul > li').click(function(e){
+                if (e.target.tagName != 'A') {
+                    $('.open').removeClass('open'); // отнимаем класс open у ранее открытого вложенного списка
+                    $(this).find('ul').addClass('open'); // добавляем класс open вложенному списку в кликнутом пункте
+                }
+            });
+        } else { // если мы хотим аккордеон с более красивой анимацией
+            $('.catmenu li li').slideUp(1); // скрываем все пункты второго уровня
+            $('.catmenu > ul > li').click(function(e){ // ловим клик на пункте первого уровня
+                if ((e.target.tagName != 'A') && (!$(this).find('.open').length)) { // если клик не был по ссылке и вложенный список в этом пункте уже не раскрыт...
+                    let here = $(this).find('ul'); // сохраняем указатель на вложенный список в кликнутом пункте 
+                    if (here.length) { // если в кликнутом пункте есть вложенный список...
+                        if ($('.catmenu .open').length) { // если был раскрытый вложенный список...
+                            $('.catmenu .open li').slideUp(1000, function(){ // прячем его пункты
+                                $('.catmenu .open').removeClass('open'); // затем убираем с него класс open
+                                here.find('li').slideDown(1000, function(){ // затем открываем пункты списка по нашему указателю
+                                    here.addClass('open'); // и вешаем на него класс open
+                                });
+                            });
+                        } else { // если раскрытого вложенного списка не было...
+                            here.find('li').slideDown(1000, function(){ // открываем пункты списка по нашему указателю
+                                here.addClass('open'); // и вешаем на него класс open
+                            });
+                        }
+                    } else {
+                        if ($('.catmenu .open').length) { // если был раскрытый вложенный список...
+                            $('.catmenu .open li').slideUp(1000, function(){ // прячем его пункты
+                                $('.catmenu .open').removeClass('open'); // затем убираем с него класс open
+                            });
+                        }
+                    }
+                }
+            });
+        }
+    }
+    
+    // if ($('.querymenu').length) {
+        // $( "#acco" ).accordion({
+            // header: ".acco_h",
+            // icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
+        // });
+        // $( "#toggle" ).button().on( "click", function() {
+            // if ( $( "#acco" ).accordion( "option", "icons" ) ) {
+                // $( "#acco" ).accordion( "option", "icons", null );
+            // } else {
+                // $( "#acco" ).accordion( "option", "icons", icons );
+            // }
+        // });
+    // }
+    
+    if ($('#slider-range').length) {
+        $('#slider-range').slider({
+            range: true,
+            min: rangemin,
+            max: rangemax,
+            values: [rangemin, rangemax],
+            slide: function(event, ui) {
+                $('#amount1').val(ui.values[0]);
+                $('#amount2').val(ui.values[1]);
+            }
+        });
+        $('#amount1').on('change', function() {
+            let v1 = +$('#amount1').val();
+            let v2 = +$('#amount2').val();
+            if (v1 > rangemax) {
+                v1 = rangemax;
+            } else if (v1 < rangemin) {
+                v1 = rangemin;
+            }
+            $('#amount1').val(v1);
+            if (v1 > v2) {
+                v2 = v1;
+                $('#amount2').val(v2);
+            }
+            $('#slider-range').slider('values', [v1, v2]);
+        });
+        $('#amount2').on('change', function() {
+            let v1 = +$('#amount1').val();
+            let v2 = +$('#amount2').val();
+            if (v2 > rangemax) {
+                v1 = rangemax;
+            } else if (v2 < rangemin) {
+                v1 = rangemin;
+            }
+            $('#amount2').val(v2);
+            if (v1 > v2) {
+                v1 = v2;
+                $('#amount1').val(v1);
+            }
+            $('#slider-range').slider('values', [v1, v2]);
+        });
+        $('#amount1').val(rangemin);
+        $('#amount2').val(rangemax);
+    }
     
     console.log('just loaded');
 });
