@@ -49,125 +49,225 @@
         <main class="catalog">
             <section class="container">
                 <aside>
-                    <!--<nav class="querymenu">
-                        <p>Каталог</p>
-                        <div id="acco">
-                            <div class="acco_h">
-                                <a href="#"><span>Подкаталог 1</span></a>
-                            </div>
-                            <div class="acco_c"></div>
-                            <div class="acco_h">
-                                <a href="#"><span>Подкаталог 2</span></a>
-                            </div>
-                            <div class="acco_c">
-                                <a href="#"><span>Субкаталог 21</span></a>
-                                <a href="#"><span>Субкаталог 22</span></a>
-                                <a href="#"><span>Субкаталог 23</span></a>
-                            </div>
-                            <div class="acco_h">
-                                <a href="#"><span>Подкаталог 3</span></a>
-                            </div>
-                            <div class="acco_c">
-                                <a href="#"><span>Субкаталог 31</span></a>
-                                <a href="#"><span>Субкаталог 32</span></a>
-                                <a href="#"><span>Субкаталог 33</span></a>
-                                <a href="#"><span>Субкаталог 34</span></a>
-                                <a href="#"><span>Субкаталог 35</span></a>
-                                <a href="#"><span>Субкаталог 36</span></a>
-                            </div>
-                            <div class="acco_h">
-                                <a href="#"><span>Подкаталог 4</span></a>
-                            </div>
-                            <div class="acco_c">
-                                <a href="#"><span>Субкаталог 41</span></a>
-                            </div>
-                            <div class="acco_h">
-                                <a href="#"><span>Подкаталог 5</span></a>
-                            </div>
-                            <div class="acco_c"></div>
-                            <div class="acco_h">
-                                <a href="#"><span>Подкаталог 6</span></a>
-                            </div>
-                            <div class="acco_c"></div>
-                        </div>
-                    </nav>-->
-                    <!-- catmenu -->
-                    <!-- <nav class="catmenu simple"> -->
+                    
                     <nav class="catmenu">
                         <p>Каталог</p>
                         <ul>
+                            
                             <li>
-                                <a href="#"><span>Подкаталог 1</span></a>
-                            </li>
-                            <li>
-                                <a href="#"><span>Подкаталог 2</span></a>
+                                <a href="#"><span>Смартфоны</span></a>
                                 
                                 <ul>
                                     <li>
-                                        <a href="#"><span>Субкаталог 21</span></a>
+                                        <a href="#"><span>Mi</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><span>Субкаталог 22</span></a>
+                                        <a href="#"><span>Poco</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><span>Субкаталог 23</span></a>
+                                        <a href="#"><span>Redmi</span></a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#"><span>Подкаталог 3</span></a>
+                                <a href="#"><span>Наушники</span></a>
+                            </li>
+                            
+                            <li>
+                                <a href="#"><span>Красота и здоровье</span></a>
                                 
                                 <ul>
                                     <li>
-                                        <a href="#"><span>Субкаталог 31</span></a>
+                                        <a href="#"><span>Фены</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><span>Субкаталог 32</span></a>
+                                        <a href="#"><span>Електрические зубные щетки</span></a>
                                     </li>
                                     <li>
-                                        <a href="#"><span>Субкаталог 33</span></a>
+                                        <a href="#"><span>Напольные весы</span></a>
                                     </li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#"><span>Подкаталог 4</span></a>
+                                <a href="#"><span>Планшеты</span></a>
                             </li>
                             <li>
-                                <a href="#"><span>Подкаталог 5</span></a>
+                                <a href="#"><span>Электросамокаты</span></a>
                             </li>
                             <li>
-                                <a href="#"><span>Подкаталог 6</span></a>
+                                <a href="#"><span>Умные часы и браслеты</span></a>
                             </li>
                         </ul>
                     </nav>
                     <!-- /catmenu -->
                     <div class="filters">
-                        <p>Фильтры</p>
+                        <p>Фильтры:</p>
                         <p>
-                            <label for="amount">Цена от:</label>
+                            <label for="amount">Цена руб. от:</label>
                             <input type="text" id="amount1">
                         </p>
                         <p>
-                            <label for="amount">Цена до:</label>
+                            <label for="amount">Цена руб. до:</label>
                             <input type="text" id="amount2">
                         </p>          
                         <div id="slider-range"></div>
                     </div>
+                    
+                    <div class="pamyat">
+                        <p>Объем встроенной памяти ГБ</p>
+                        <input type="checkbox" name="checkbox1"><span>64</span>
+                        <br>
+                        <input type="checkbox" name="checkbox2"><span>128</span>
+                        <br>
+                        <input type="checkbox" name="checkbox3"><span>256</span>
+                    </div>
+                    
+                    <div class="cvet">
+                        <p>Цвет</p>
+                        <input type="checkbox" name="checkbox1"><span class="red"></span>
+                        <br>
+                        <input type="checkbox" name="checkbox2"><span class="yellow"></span>
+                        <br>
+                        <input type="checkbox" name="checkbox3"><span class="green"></span>
+                    </div>
+                    <div class="sposob">
+                        <p>Способ получения товара:</p>
+                        <input type="radio"name="radio"><span>Самовывоз из магазина<br></span>
+                        <input type="radio"name="radio"><span>Доставка до двери</span>
+                    </div>
                 </aside>
                 
+                
+                
                 <article>
-                    <div class="cat-item"></div>
-                    <div class="cat-item"></div>
-                    <div class="cat-item"></div>
-                    <div class="cat-item"></div>
-                    <div class="cat-item"></div>
-                    <div class="cat-item"></div>
-                    <div class="cat-item"></div>
-                    <div class="cat-item"></div>
-                    <div class="cat-item"></div>
-                    <div class="cat-item"></div>
-                    <div class="cat-item"></div>
-                    <div class="cat-item"></div>
+                    <div class="cat-item pocowatch">
+                        <p>
+                            <a href="#">Умные часы POCO Watch<br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>5990 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item tpro12">
+                        <p>
+                            <a href="#">Смартфон Xiaomi 12T Pro <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>50990 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item sband7">
+                        <p>
+                            <a href="#">Умный браслет Smart Band 7 Pro<br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>6990 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item buds">
+                        <p>
+                            <a href="#">Наушники Redmi Buds 3T Pro <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>12990 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item sam1s">
+                        <p>
+                            <a href="#">Электросамокат Xiaomi Mi ES 1S <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>33190 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item pocom5">
+                        <p>
+                            <a href="#">Смартфон Xiaomi Poco M5 Pro<br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>14990 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item sampro">
+                        <p>
+                            <a href="#">Электросамокат Xiaomi M365 Pro <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>38190 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item pad5">
+                        <p>
+                            <a href="#">Планшет Xiaomi Pad5 <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>32090 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item zub">
+                        <p>
+                            <a href="#">Зубная щетка Xiaomi DR.BEI SE <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>6090 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item fen">
+                        <p>
+                            <a href="#">Фен Xiaomi Mija Hair Dryer H500 <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>4990 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item redmipad">
+                        <p>
+                            <a href="#">Планшет Redmi Pad диагональ 10,61' <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>22990 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item note10">
+                        <p>
+                            <a href="#">Смартфон Redmi Note 10 Pro<br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>17890 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item note11">
+                        <p>
+                            <a href="#">Смартфон Redmi Note 11 Pro<br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>32290 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item pocof4">
+                        <p>
+                            <a href="#">Смартфон Xiaomi Poco F4 GT<br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>52190 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item pocom4">
+                        <p>
+                            <a href="#">Смартфон Xiaomi Poco M4 Pro<br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>22590 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item tpro11">
+                        <p>
+                            <a href="#">Смартфон Xiaomi Poco M4 Pro<br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>44990 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    <div class="cat-item x12">
+                        <p>
+                            <a href="#">Смартфон Xiaomi 12 Pro <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>56990 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    
+                    <div class="cat-item ves">
+                        <p>
+                            <a href="#">Весы Xiaomi Mi body Composition Scale2 <br> <i>Подробнее</i> </a>
+                        </p>
+                        <span>2790 руб.</span>
+                        <button type="button">купить</button>
+                    </div>
+                    
                 </article>
             </section>
         </main>

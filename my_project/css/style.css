@@ -199,7 +199,7 @@ footer {
     left: 0;
     right: 0;
     cursor: pointer;
-    z-index: 1;
+    z-index: 100;
 }
 .modal {
     background: white;
@@ -209,7 +209,7 @@ footer {
     width: 400px;
     top: 200px;
     padding: 40px;
-    z-index: 1;
+    z-index: 101;
     
 }
 .close {
@@ -280,11 +280,12 @@ footer {
 .logo {
     
     display: inline-block;
-    width: 32px;
+    width: 40px;
     height: 40px;
     background: url('../images/logo.png') center center no-repeat;
+    background-size: cover;
     margin-right: 20px;
-    margin-top: 0px;
+    margin-top: 10px;
     
 }
 .poisk {
@@ -684,6 +685,10 @@ footer {
 
 
 
+
+
+
+
 /* catalog */
 .catalog .container {
     display: flex;
@@ -693,8 +698,10 @@ footer {
 }
 .catalog aside {
     flex: 0 0 360px;
-    background: green;
+    background: #546;
     color: white;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
 }
 .catmenu {
     padding: 20px;
@@ -738,24 +745,174 @@ footer {
 .catalog .filters {
     padding: 20px;
 }
+.filters label {
+    font-size: 16px;
+}
 #slider-range {
     margin: 20px 0;
+    color: #fff
 }
 #slider-range .ui-widget-header {
-    background: blue;
+    background: red;
 }
+#amount1, #amount2{
+    color: red;
+    font-weight: 500;
+}
+.sposob {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sposob span {
+    font-size: 16px;
+    margin-left: 5px;
+}
+.pamyat {
+    margin-left: 20px;
+    
+}
+.pamyat span {
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.cvet {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.cvet span {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    margin-left: 5px;
+    border-radius: 10px;
+}
+.cvet .red {
+    
+    width: 50px;
+    height: 20px;
+    background: red;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.cvet .yellow {
+    
+    width: 50px;
+    height: 20px;
+    background: yellow;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+.cvet .green {
+    
+    width: 50px;
+    height: 20px;
+    background: #1bad18;
+    margin-left: 5px;
+    margin-top: 10px;
+}
+
+
 .catalog article {
-    /* display: table; */
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
 }
+
+
 .cat-item {
     width: 140px;
     height: 290px;
-    border: 5px solid red;
-    
+    border: 5px solid #b4acbd;
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
 }
+.cat-item a {
+    
+    color: black;
+    font-weight: 600;
+}
+.cat-item a::after{
+    font-family: 'IcoMoon-Free';
+    content: '\ea42';
+}
+.cat-item button {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    background: #442e54;
+    color: #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 15px;
+    border: 1px solid #b4acbd;
+}
+.cat-item span {
+    display: inline-block;
+    font-size: 25px;
+    color: black;
+    margin-top: 20px;
+}
+.pocowatch {
+    background: url('../images/pocowatch.png') bottom center no-repeat;
+}
+.sband7 {
+    background: url('../images/band7.png') bottom center no-repeat;
+}
+.buds{
+    background: url('../images/buds3tpro.png') bottom center no-repeat;
+}
+.sam1s {
+    background: url('../images/1s.png') bottom center no-repeat;
+}
+.sampro {
+    background: url('../images/pro.png') bottom center no-repeat;
+}
+.ves {
+    background: url('../images/vesy.png') bottom center no-repeat;
+}
+.zub {
+    background: url('../images/zubshetka.png') bottom center no-repeat;
+}
+.fen {
+    background: url('../images/fen1.png') bottom center no-repeat;
+}
+.redmipad {
+    background: url('../images/redmipad.png') bottom center no-repeat;
+}
+.note10 {
+    background: url('../images/redminote10pro.png') bottom center no-repeat;
+}
+.note11 {
+    background: url('../images/redminote11pro.png') bottom center no-repeat;
+}
+.pocof4 {
+    background: url('../images/pocof4.png') bottom center no-repeat;
+}
+.pocom4 {
+    background: url('../images/pocom4.png') bottom center no-repeat;
+}
+.pocom5 {
+    background: url('../images/pocom5.png') bottom center no-repeat;
+}
+.tpro11 {
+    background: url('../images/11tpro.png') bottom center no-repeat;
+}
+.x12 {
+    background: url('../images/12x.png') bottom center no-repeat;
+}
+.tpro12 {
+    background: url('../images/12tpro.png') bottom center no-repeat;
+}
+.pad5 {
+    background: url('../images/pad5.png') bottom center no-repeat;
+}
+
 
 
 

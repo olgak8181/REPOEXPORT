@@ -1,7 +1,7 @@
 /* variables */
 let citylist = ['Москва', 'Немосква', 'Караганда', 'Магадан', 'Люберцы', 'Севастополь', 'Ярославль', 'Вологда', 'Владивосток', 'Барнаул', 'Петрозаводск', 'Самара', 'Саратов', 'Тверь', 'Вашингтон', 'Париж', 'Пермь', 'Екатеринбург', 'Новосибирск', 'Калининград'];
-let rangemin = 1000;
-let rangemax = 70000;
+let rangemin = 0;
+let rangemax = 300;
 
 /* functions */
 function getModalWindow(idname) {
@@ -50,8 +50,6 @@ function multiple(num, word1, word2, word3) {
 
 /* on ready */
 $(function(){
-    $('#city span').html(localStorage.getItem('city') || 'Москва');
-    
     $('#city').click(function(){
         getModalWindow('citymodal');
         $('.modal').append('<h1>Выберите город:</h1><input type="text" id="citysearch" placeholder="Введите часть названия города..."><div class="columns"></div>');
@@ -59,9 +57,7 @@ $(function(){
             $('.modal .columns').append('<p>' + city + '</p>');
         }
         $('.modal p').click(function(){
-            let city = $(this).html()
-            $('#city span').html(city);
-            localStorage.setItem('city', city);
+            $('#city span').html($(this).html());
             dropModalWindow();
         });
         $('#citysearch').on('input', function(){

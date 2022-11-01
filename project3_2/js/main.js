@@ -1,7 +1,5 @@
 /* variables */
 let citylist = ['Москва', 'Немосква', 'Караганда', 'Магадан', 'Люберцы', 'Севастополь', 'Ярославль', 'Вологда', 'Владивосток', 'Барнаул', 'Петрозаводск', 'Самара', 'Саратов', 'Тверь', 'Вашингтон', 'Париж', 'Пермь', 'Екатеринбург', 'Новосибирск', 'Калининград'];
-let rangemin = 1000;
-let rangemax = 70000;
 
 /* functions */
 function getModalWindow(idname) {
@@ -50,8 +48,6 @@ function multiple(num, word1, word2, word3) {
 
 /* on ready */
 $(function(){
-    $('#city span').html(localStorage.getItem('city') || 'Москва');
-    
     $('#city').click(function(){
         getModalWindow('citymodal');
         $('.modal').append('<h1>Выберите город:</h1><input type="text" id="citysearch" placeholder="Введите часть названия города..."><div class="columns"></div>');
@@ -59,9 +55,7 @@ $(function(){
             $('.modal .columns').append('<p>' + city + '</p>');
         }
         $('.modal p').click(function(){
-            let city = $(this).html()
-            $('#city span').html(city);
-            localStorage.setItem('city', city);
+            $('#city span').html($(this).html());
             dropModalWindow();
         });
         $('#citysearch').on('input', function(){
@@ -139,50 +133,6 @@ $(function(){
         // });
     // }
     
-    if ($('#slider-range').length) {
-        $('#slider-range').slider({
-            range: true,
-            min: rangemin,
-            max: rangemax,
-            values: [rangemin, rangemax],
-            slide: function(event, ui) {
-                $('#amount1').val(ui.values[0]);
-                $('#amount2').val(ui.values[1]);
-            }
-        });
-        $('#amount1').on('change', function() {
-            let v1 = +$('#amount1').val();
-            let v2 = +$('#amount2').val();
-            if (v1 > rangemax) {
-                v1 = rangemax;
-            } else if (v1 < rangemin) {
-                v1 = rangemin;
-            }
-            $('#amount1').val(v1);
-            if (v1 > v2) {
-                v2 = v1;
-                $('#amount2').val(v2);
-            }
-            $('#slider-range').slider('values', [v1, v2]);
-        });
-        $('#amount2').on('change', function() {
-            let v1 = +$('#amount1').val();
-            let v2 = +$('#amount2').val();
-            if (v2 > rangemax) {
-                v1 = rangemax;
-            } else if (v2 < rangemin) {
-                v1 = rangemin;
-            }
-            $('#amount2').val(v2);
-            if (v1 > v2) {
-                v1 = v2;
-                $('#amount1').val(v1);
-            }
-            $('#slider-range').slider('values', [v1, v2]);
-        });
-        $('#amount1').val(rangemin);
-        $('#amount2').val(rangemax);
-    }
     
     console.log('just loaded');
 });
