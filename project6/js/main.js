@@ -1,7 +1,7 @@
 /* variables */
 let citylist = ['Москва', 'Немосква', 'Караганда', 'Магадан', 'Люберцы', 'Севастополь', 'Ярославль', 'Вологда', 'Владивосток', 'Барнаул', 'Петрозаводск', 'Самара', 'Саратов', 'Тверь', 'Вашингтон', 'Париж', 'Пермь', 'Екатеринбург', 'Новосибирск', 'Калининград'];
-let rangemin = 1000;
-let rangemax = 70000;
+let rangemin = 0;
+let rangemax = 300;
 let startbasket = [
     {
         id: 1,
@@ -50,7 +50,7 @@ function actiontimer() {
     delta = Math.floor(delta/60);
     let hours = delta % 24;
     let days = Math.floor(delta/24);
-    let helpstr = `${days} ${multiple(days, 'день', 'дня', 'дней')} ${addZero(hours)} ${multiple(hours, 'час', 'часа', 'часов')} ${addZero(minutes)} ${multiple(minutes, 'минута', 'минуты', 'минут')} ${addZero(seconds)} ${multiple(seconds, 'секунда', 'секунды', 'секунд')}`;
+    let helpstr = `<span>${days}</span> ${multiple(days, 'день', 'дня', 'дней')} <span>${addZero(hours)}</span> ${multiple(hours, 'час', 'часа', 'часов')} <span>${addZero(minutes)}</span> ${multiple(minutes, 'минута', 'минуты', 'минут')} <span>${addZero(seconds)}</span> ${multiple(seconds, 'секунда', 'секунды', 'секунд')}`;
     $('.actiontimer').html(helpstr);
     return res;
 }
@@ -70,7 +70,6 @@ function multiple(num, word1, word2, word3) {
         return word3;
     }
 }
-
 function orderReCount() {
     let point = $('.table');
     let allsum = 0;
@@ -90,7 +89,6 @@ function changeOrder(line, num){
         orderReCount();
     }
 }
-
 
 /* on ready */
 $(function(){

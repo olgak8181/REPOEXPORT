@@ -7,7 +7,7 @@
         
         <title>Карточка товара</title>
         
-        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
         <link rel="stylesheet" href="css/style.css">
         
         <script defer src="js/jquery-3.6.1.min.js"></script>
@@ -40,8 +40,8 @@
                         <a href="index.html"><span>Главная страница</span></a>
                         <a href="catalog.html"><span>Каталог</span></a>
                         <a href="product.html"><span>Товар</span></a>
-                        <a href="#"><span>Корзина</span></a>
-                        <a href="#"><span>Контакты</span></a>
+                        <a href="order.html"><span>Корзина</span></a>
+                        <a href="contacts.html"><span>Контакты</span></a>
                     </nav>
                 </div>
             </section>
@@ -75,26 +75,26 @@
             </section>
             
             <section class="container">
-                <div class="product">
+                <div class="product" data-product-id="12345" itemscope itemtype="https://schema.org/Product">
                     <div class="images">
                         <div class="bigimage">
-                            <img src="images/tpoco.jpg" alt="Poco M5">
+                            <img src="images/tpoco.jpg" alt="Poco M5" itemprop="image">
                         </div>
                         
                         <div class="gallery">
                             <div>
                                 <div class="rail">
-                                    <img src="images/mini_tpoco.jpg" alt="Poco M5">
-                                    <img src="images/mini_tpoco1.jpg" alt="Poco M5a">
-                                    <img src="images/mini_tpoco2.jpg" alt="Poco M5b">
-                                    <img src="images/mini_tpoco3.jpg" alt="Poco M5c">
-                                    <img src="images/mini_tpoco4.jpg" alt="Poco M5d">
-                                    <img src="images/mini_tpoco5.jpg" alt="Poco M5e">
-                                    <img src="images/mini_tpoco6.jpg" alt="Poco M5f">
-                                    <img src="images/mini_tpoco7.jpg" alt="Poco M5g">
-                                    <img src="images/mini_tpoco8.jpg" alt="Poco M5h">
-                                    <img src="images/mini_tpoco9.jpg" alt="Poco M5i">
-                                    <img src="images/mini_tpoco10.jpg" alt="Poco M5j">
+                                    <img src="images/mini_tpoco.jpg" alt="Poco M5" itemprop="image">
+                                    <img src="images/mini_tpoco1.jpg" alt="Poco M5a" itemprop="image">
+                                    <img src="images/mini_tpoco2.jpg" alt="Poco M5b" itemprop="image">
+                                    <img src="images/mini_tpoco3.jpg" alt="Poco M5c" itemprop="image">
+                                    <img src="images/mini_tpoco4.jpg" alt="Poco M5d" itemprop="image">
+                                    <img src="images/mini_tpoco5.jpg" alt="Poco M5e" itemprop="image">
+                                    <img src="images/mini_tpoco6.jpg" alt="Poco M5f" itemprop="image">
+                                    <img src="images/mini_tpoco7.jpg" alt="Poco M5g" itemprop="image">
+                                    <img src="images/mini_tpoco8.jpg" alt="Poco M5h" itemprop="image">
+                                    <img src="images/mini_tpoco9.jpg" alt="Poco M5i" itemprop="image">
+                                    <img src="images/mini_tpoco10.jpg" alt="Poco M5j" itemprop="image">
                                     
                                 </div>
                             </div>
@@ -104,12 +104,16 @@
                     </div>
                     
                     <div class="offer">
-                        <h1>Смартфон Xiaomi Poco M5</h1>
-                        <p class="price"><span>14990 руб.</span></p>
+                        <h1 itemprop="name">Смартфон Xiaomi Poco M5</h1>
+                        <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="price">14990</span>
+                            <meta itemprop="priceCurrency" content="RUB">
+                        </p>
+                        <button type="button" class="btn btn-danger btn-buy">КУПИТЬ</button>
                         <h4>Цвет:</h4>
                         <p>зеленый</p>
                         <h4>Процессор:</h4>
-                        <p>MediaTek Helio G99 Техпроцесс — 6 нмЦП: восьмиядерный с тактовой частотой
+                        <p itemprop="description">MediaTek Helio G99 Техпроцесс — 6 нмЦП: восьмиядерный с тактовой частотой
                         до 2,2 ГГц.</p>
                         <h4>Память и ОЗУ:</h4>
                         <p>4 ГБ+64 ГБ, 4 ГБ+128 ГБ. Поддержка расширяемой памяти до 1 ТБ.
