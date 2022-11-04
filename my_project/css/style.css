@@ -287,8 +287,8 @@ footer {
 .cont1 {
     display: flex;
     align-items: center;
-    justify-content: start;
-    padding-left: 300px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 #city {
     cursor: pointer;
@@ -304,6 +304,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .logo {
     
@@ -316,6 +317,17 @@ footer {
     margin-top: 10px;
     
 }
+.phon {
+    
+    color: white;
+}
+.phon::before {
+    font-family: 'IcoMoon-Free';
+    content: "\e942";
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
 .poisk {
     display: inline-block;
     width: 428px;
@@ -326,7 +338,7 @@ footer {
     font-size: 14px;
     
 }
-.iskat{
+.cont2 .iskat{
     display: inline-block;
     width: 80px;
     height: 30px;
@@ -634,6 +646,7 @@ footer {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
     margin-bottom: 30px;
     
 }
@@ -721,13 +734,83 @@ footer {
     content: '\ea42';
     
 }
-
-
-
-
-
-
-
+.popular {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.popular h3{
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.preimush {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.preimush h3{
+    text-align: center;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.preimush div {
+    width: 280px;
+    line-height: 40px;
+    border: 2px solid silver;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    color: black;
+}
+.dostav::before {
+    font-family: 'IcoMoon-Free';
+    content: '\e9a5';
+    color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.cenasup::before {
+    font-family: 'IcoMoon-Free';
+    content: '\e9a9';
+    color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.bonus::before {
+    font-family: 'IcoMoon-Free';
+    content: '\e99f';
+    color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.obmen::before {
+    font-family: 'IcoMoon-Free';
+    content: '\ea2e';
+    color: red;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.promagaz {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding: 0 60px 0;
+}
+.promagaz h3{
+    text-align: center;
+    width: 100%;
+}
+.promagaz p {
+    text-align: center;
+}
 /* catalog */
 .catalog .container {
     display: flex;
@@ -863,7 +946,20 @@ footer {
     margin-left: 5px;
     margin-top: 10px;
 }
-
+.primenit {
+    display: inline-block;
+    width: 200px;
+    height: 30px;
+    background: #442e54;
+    color: #fff;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #b4acbd;
+}
 
 .catalog article {
     display: flex;
@@ -1172,6 +1268,108 @@ footer {
     grid-template-columns: repeat(7, auto);
 }
 
+/*contacts*/
+
+
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.contacts a {
+    text-decoration: none;
+    cursor: pointer;
+    color: gray;
+}
+.contacts h2 {
+    margin-top: 20px;
+    font-size: 25px;
+}
+.adres{
+    width: 370px;
+    height: 560px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    padding: 230px 10px 0px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background: url('../images/inform.jpg') top center no-repeat;
+    background-size: width 100%;
+}
+.telef::before {
+    font-family: 'IcoMoon-Free';
+    content: '\e942';
+    margin-right: 10px;
+}
+.mails::before{
+    font-family: 'IcoMoon-Free';
+    content: '\ea84';
+    margin-right: 10px;
+}
+
+.send{
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    padding: 0px 50px 0px;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+.otpr {
+    display: block;
+    width: 325px;
+    height: 610px;
+}
+.send label{
+    display: block;
+    /*font: 400 16px/30px 'Roboto';
+    color: #1F3F68;
+    opacity: 0.8;*/
+    margin: 32px 0px 8px;
+}
+.send .ramka{
+    display: block;
+    width: 325px;
+    height: 72px;
+    border: 1px solid #c3bdc7;
+    box-sizing: border-box;
+    padding: 20px 35px;
+    border-radius: 10px;
+    /*font: 300 16px/30px 'Roboto';
+    color: #1F3F68;
+    opacity: 0.2;*/
+}
+.send .ramka2{
+    display: block;
+    width: 325px;
+    height: 144px;
+    border: 1px solid #c3bdc7;
+    box-sizing: border-box;
+    padding: 20px 35px;
+    border-radius: 10px;
+    /*font: 300 16px/30px 'Roboto';
+    color: #1F3F68;
+    opacity: 0.2;*/
+}
+.send button{
+    display: block;
+    width: 325px;
+    height: 72px;
+    margin-top: 50px;
+    font: 500 16px/26px 'Roboto';
+    color: white;
+    background: #442e54;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+::placeholder {
+    opacity: 0.6;
+}
+
+
 
 
 
@@ -1188,9 +1386,13 @@ footer ul{
 
 .stolbiki{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     padding: 40px auto;
     justify-content: center;
+}
+.stolbiki a {
+    color: silver;
 }
 .liner {
     height: 0;
@@ -1207,6 +1409,7 @@ footer ul{
     font-family: 'IcoMoon-Free';
     content: '\e942';
     margin-right: 10px;
+    cursor: pointer;
 }
 .pochta::before{
     font-family: 'IcoMoon-Free';
@@ -1218,6 +1421,7 @@ footer ul{
     content: '\ea95'' ''\ea91'' ''\ea98'' ''\ea93';
     margin-right: 10px;
 }
+
 
 
 /* adaptive */
