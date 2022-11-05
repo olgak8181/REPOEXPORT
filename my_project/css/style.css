@@ -129,6 +129,7 @@ a {
 a:hover > span {
     text-decoration: underline;
 }
+
 button {
     cursor: pointer;
 }
@@ -150,21 +151,7 @@ h1 {
     color: white;
     text-align: center;
 }
-/*.icon:hover::before {
-    color: lightblue;
-}
-.logo::before {
-    content: '\e900';
-}
-.login::before {
-    content: '\e902';
-}
-.order::before {
-    content: '\e901';
-}
-.cat::before {
-    content: '\e903';
-}*/
+
 .to_left::before {
     content: '\e905';
 }
@@ -338,6 +325,7 @@ footer {
     font-size: 14px;
     
 }
+
 .cont2 .iskat{
     display: inline-block;
     width: 80px;
@@ -349,7 +337,8 @@ footer {
     text-transform: uppercase;
     font-weight: bold;
     margin-left: 10px;
-    margin-right: 25px;
+    margin-right: 20px;
+    font-size: 14px;
 }
 
 .user {
@@ -381,7 +370,7 @@ footer {
     font-family: 'IcoMoon-Free';
     width: 50px;
     height: 40px;
-    margin-right: 20px;
+    /*margin-right: 30px;*/
     margin-top: 10px;
     box-sizing: border-box;
 }
@@ -397,11 +386,13 @@ footer {
     border: 1px solid #fff;
     border-radius: 5px;
     color: white;
+    margin-left:10px;
 }
 .cont3{
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 .topmenu {
     padding: 10px 0;
@@ -470,6 +461,9 @@ footer {
     margin-left: 10px;
     border: 1px solid #fff;
     box-shadow: inset 0 0 10px rgba(0,0,0,.25);
+}
+.action button:hover {
+    background: red;
 }
 .actiontimer {
     display: block;
@@ -811,6 +805,10 @@ footer {
 .promagaz p {
     text-align: center;
 }
+
+
+
+
 /* catalog */
 .catalog .container {
     display: flex;
@@ -872,7 +870,7 @@ footer {
     border: 1px solid white;
     color: white;
     padding: 2px 5px;
-    width: 60px;
+    width: 70px;
     text-align: center;
     margin: 0 5px;
 }
@@ -893,6 +891,25 @@ footer {
     color: red;
     font-weight: 500;
 }
+.sortirovka {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.sortirovka span {
+    font-size: 16px;
+    margin-left: 5px;
+}
+.vozrast::after {
+    font-family: 'IcoMoon-Free';
+    content: '\ea4c';
+    margin-left: 5px;
+}
+.ubyvan::after {
+    font-family: 'IcoMoon-Free';
+    content: '\ea4d';
+    margin-left: 5px;
+}
+
 .sposob {
     margin-left: 20px;
     margin-top: 20px;
@@ -955,12 +972,14 @@ footer {
     border-radius: 10px;
     text-transform: uppercase;
     font-weight: 800;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-left: 20px;
     margin-bottom: 20px;
     border: 2px solid #b4acbd;
 }
-
+.primenit:hover {
+    background: red;
+}
 .catalog article {
     display: flex;
     flex-wrap: wrap;
@@ -1004,6 +1023,9 @@ footer {
     font-size: 25px;
     color: red;
     margin-top: 20px;
+}
+.cat-item button:hover {
+    background: red;
 }
 .pocowatch {
     background: url('../images/pocowatch.png') bottom center no-repeat;
@@ -1098,17 +1120,27 @@ footer {
 
 
 /* product */
+
+.bread {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .product {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    
     gap: 30px;
 }
 .images {
     flex: 0 0 470px;
 }
+.product img {
+    border-radius: 5px;
+}
 .bigimage {
     width: 450px;
-    border: 2px solid #b4acbd;
     padding: 9px;
     border-radius: 10px;
 }
@@ -1177,20 +1209,70 @@ footer {
     line-height: 20px;
     
 }
-
+.zelen::after {
+    font-family: 'IcoMoon-Free';
+    content: '\ea1e';
+    color: #417a77;
+    font-size: 25px;
+    margin-top: 10px;
+}
+.offer h1 {
+    color: #413347;
+}
+.reiting::after {
+    font-family: 'IcoMoon-Free';
+    content: '\e9d9\e9d9\e9d9\e9d9\e9d8';
+    color: red;
+    margin-left: 5px;
+}
+.offer h4 {
+    margin-top: 10px;
+}
+.offer h3 {
+    margin-top: 10px;
+}
 .offer .price {
     color: red;
     font-size: 50px;
     line-height: 70px;
 }
-
+.btn-danger{
+    background: #413347;
+    border: white;
+    color: white;
+    font-weight: bold;
+}
 .price span::after {
     content: '\20BD'
 }
+.darim {
+    margin-top: 20px;
+}
+.podarki {
+    color: #413347;
+    text-decoration: none;
+}
+.podarki::before {
+    font-family: 'IcoMoon-Free';
+    content: '\e99f';
+    color: red;
+    margin-right: 5px;
+    font-size: 20px;
+}
+.podarki::after {
+    font-family: 'IcoMoon-Free';
+    content: '\ea42';
+    color: #413347;
+    margin-left: 5px;
+    font-size: 16px;
+}
+
+
+
 
 /* order */
 .order .icon {
-    font-family: 'icomoon' !important;
+    font-family: 'icomoon';
     cursor: pointer;
 }
 .table tfoot th {
@@ -1231,7 +1313,7 @@ footer {
 .table .qty span {
     border-radius: 50%;
     border: 1px solid black;
-    background: blue;
+    background: #5c4169;
     color: white;
     width: 20px;
     height: 20px;
@@ -1240,6 +1322,9 @@ footer {
     line-height: 20px;
     cursor: pointer;
     user-select: none;
+}
+.qty span:hover {
+    background: #8f354a;
 }
 .table .qty .minus {
     margin-right: 10px;
@@ -1258,6 +1343,23 @@ footer {
 .empty .container.empty {
     display: block;
 }
+.form-check .form-check-input {
+    background: #5c4169;
+}
+.mb-3 .btn-primary {
+    background: #5c4169;
+}
+.mb-3 .btn-primary:hover {
+    background: #8f354a;
+}
+td a {
+    color: #3e2a47;
+}
+
+
+
+
+
 
 /* calendar */
 #calendar {
@@ -1266,7 +1368,37 @@ footer {
 .dp_grid {
     display: grid;
     grid-template-columns: repeat(7, auto);
+    
 }
+.btn-outline-secondary {
+    color: #3e2a47;
+    background: #beb4c2;
+}
+#calendar .holiday {
+    color: red;
+}
+#calendar span {
+    border: 1px dotted gray;
+    border-radius: 10px;
+    background: #5c4169;
+    color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+#calendar strong {
+    color: #421a54;
+    border: 2px dotted gray;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
 
 /*contacts*/
 
@@ -1364,6 +1496,9 @@ footer {
     box-shadow: 10px 10px 20px rgba(0,0,0,0.5);
     text-transform: uppercase;
     border-radius: 10px;
+}
+.send button:hover {
+    background: #8f354a;
 }
 ::placeholder {
     opacity: 0.6;

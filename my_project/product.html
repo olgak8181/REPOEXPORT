@@ -52,29 +52,31 @@
         
         <main>
             <section class="container">
-                <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
-                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="index.html">
-                            <span itemprop="name">Главная страница</span>
-                        </a>
-                        <meta itemprop="position" content="1">
-                        <link itemprop="url" href="index.html">
-                    </li>
-                    
-                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="catalog.html">
-                            <span itemprop="name">Каталог</span>
-                        </a>
-                        <meta itemprop="position" content="2">
-                        <link itemprop="url" href="catalog.html">
-                    </li>
-                    
-                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <span itemprop="name">Товар</span>
-                        <meta itemprop="position" content="3">
-                        <link itemprop="url" href="product.html">
-                    </li>
-                </ul>
+                <div class="bread">
+                    <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="index.html">
+                                <span itemprop="name">Главная страница</span>
+                            </a>
+                            <meta itemprop="position" content="1">
+                            <link itemprop="url" href="index.html">
+                        </li>
+                        
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <a href="catalog.html">
+                                <span itemprop="name">Каталог</span>
+                            </a>
+                            <meta itemprop="position" content="2">
+                            <link itemprop="url" href="catalog.html">
+                        </li>
+                        
+                        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                            <span itemprop="name">Товар</span>
+                            <meta itemprop="position" content="3">
+                            <link itemprop="url" href="product.html">
+                        </li>
+                    </ul>
+                </div>
             </section>
             
             <section class="container">
@@ -108,13 +110,18 @@
                     
                     <div class="offer">
                         <h1 itemprop="name">Смартфон Xiaomi Poco M5</h1>
+                        <p class="reiting">Рейтинг:</p>
                         <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
                             <span itemprop="price">14990</span>
                             <meta itemprop="priceCurrency" content="RUB">
                         </p>
                         <button type="button" class="btn btn-danger btn-buy">КУПИТЬ</button>
+                        <p class="darim">
+                            <a href="#" class="podarki">Подарок при покупке: кожаный чехол-книжка</a>
+                        </p>
+                        <h3 class="haract"><u>Характеристики:</u></h3>
                         <h4>Цвет:</h4>
-                        <p>зеленый</p>
+                        <p class="zelen"></p>
                         <h4>Процессор:</h4>
                         <p itemprop="description">MediaTek Helio G99 Техпроцесс — 6 нмЦП: восьмиядерный с тактовой частотой
                         до 2,2 ГГц.</p>

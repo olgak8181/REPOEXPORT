@@ -1,26 +1,26 @@
 /* variables */
-let citylist = ['Москва', 'Немосква', 'Караганда', 'Магадан', 'Люберцы', 'Севастополь', 'Ярославль', 'Вологда', 'Владивосток', 'Барнаул', 'Петрозаводск', 'Самара', 'Саратов', 'Тверь', 'Вашингтон', 'Париж', 'Пермь', 'Екатеринбург', 'Новосибирск', 'Калининград'];
+let citylist = ['Москва', 'Санкт-Петербург', 'Архангельск', 'Астрахань', 'Ашхабад', 'Барнаул', 'Белгород', 'Бобруйск', 'Благовещенск', 'Брянск', 'Витебск', 'Владивосток', 'Владимир', 'Вологда', 'Гродно', 'Грозный', 'Днепропетровск', 'Донецк', 'Ейск', 'Екатеринбург', 'Казань', 'Калининград', 'Пенза', 'Петрозаводск', 'Самара', 'Саратов', 'Тамбов', 'Тула', 'Тюмень'];
 let rangemin = 1000;
 let rangemax = 70000;
 let startbasket = [
     {
         id: 1,
-        name: 'ZHABA',
-        price: 2000,
-        quantity: 100,
+        name: 'Смартфон Xiaomi 12T Pro',
+        price: 50990,
+        quantity: 1,
         link: ''
     },
     {
         id: 2,
-        name: 'GADIUKA',
-        price: 3000,
-        quantity: 10,
+        name: 'Электросамокат Xiaomi M365 Pro',
+        price: 38190,
+        quantity: 2,
         link: ''
     },
     {
         id: 111,
-        name: 'Cangaroo',
-        price: 15500,
+        name: 'Смартфон Xiaomi Poco F4 GT',
+        price: 52190,
         quantity: 1,
         link: ''
     }
@@ -136,35 +136,35 @@ $(function(){
     });
     
     if ($('.catmenu li li').length) {
-        if ($('.catmenu.simple').length) { // если мы хотим простейший аккордеон без сложной анимации
+        if ($('.catmenu.simple').length) { 
             $('.catmenu > ul > li').click(function(e){
                 if (e.target.tagName != 'A') {
-                    $('.open').removeClass('open'); // отнимаем класс open у ранее открытого вложенного списка
-                    $(this).find('ul').addClass('open'); // добавляем класс open вложенному списку в кликнутом пункте
+                    $('.open').removeClass('open'); 
+                    $(this).find('ul').addClass('open'); 
                 }
             });
-        } else { // если мы хотим аккордеон с более красивой анимацией
-            $('.catmenu li li').slideUp(1); // скрываем все пункты второго уровня
-            $('.catmenu > ul > li').click(function(e){ // ловим клик на пункте первого уровня
-                if ((e.target.tagName != 'A') && (!$(this).find('.open').length)) { // если клик не был по ссылке и вложенный список в этом пункте уже не раскрыт...
-                    let here = $(this).find('ul'); // сохраняем указатель на вложенный список в кликнутом пункте 
-                    if (here.length) { // если в кликнутом пункте есть вложенный список...
-                        if ($('.catmenu .open').length) { // если был раскрытый вложенный список...
-                            $('.catmenu .open li').slideUp(1000, function(){ // прячем его пункты
-                                $('.catmenu .open').removeClass('open'); // затем убираем с него класс open
-                                here.find('li').slideDown(1000, function(){ // затем открываем пункты списка по нашему указателю
-                                    here.addClass('open'); // и вешаем на него класс open
+        } else { 
+            $('.catmenu li li').slideUp(1); 
+            $('.catmenu > ul > li').click(function(e){
+                if ((e.target.tagName != 'A') && (!$(this).find('.open').length)) {
+                    let here = $(this).find('ul'); 
+                    if (here.length) { 
+                        if ($('.catmenu .open').length) { 
+                            $('.catmenu .open li').slideUp(1000, function(){ 
+                                $('.catmenu .open').removeClass('open'); 
+                                here.find('li').slideDown(1000, function(){ 
+                                    here.addClass('open'); 
                                 });
                             });
-                        } else { // если раскрытого вложенного списка не было...
-                            here.find('li').slideDown(1000, function(){ // открываем пункты списка по нашему указателю
-                                here.addClass('open'); // и вешаем на него класс open
+                        } else { 
+                            here.find('li').slideDown(1000, function(){ 
+                                here.addClass('open'); 
                             });
                         }
                     } else {
-                        if ($('.catmenu .open').length) { // если был раскрытый вложенный список...
-                            $('.catmenu .open li').slideUp(1000, function(){ // прячем его пункты
-                                $('.catmenu .open').removeClass('open'); // затем убираем с него класс open
+                        if ($('.catmenu .open').length) { 
+                            $('.catmenu .open li').slideUp(1000, function(){ 
+                                $('.catmenu .open').removeClass('open'); 
                             });
                         }
                     }
@@ -173,19 +173,7 @@ $(function(){
         }
     }
     
-    // if ($('.querymenu').length) {
-        // $( "#acco" ).accordion({
-            // header: ".acco_h",
-            // icons: { "header": "ui-icon-plus", "activeHeader": "ui-icon-minus" }
-        // });
-        // $( "#toggle" ).button().on( "click", function() {
-            // if ( $( "#acco" ).accordion( "option", "icons" ) ) {
-                // $( "#acco" ).accordion( "option", "icons", null );
-            // } else {
-                // $( "#acco" ).accordion( "option", "icons", icons );
-            // }
-        // });
-    // }
+    
     
     if ($('#slider-range').length) {
         $('#slider-range').slider({
@@ -277,20 +265,6 @@ $(function(){
             basket = [res];
         }
         localStorage.setItem('basket', JSON.stringify(basket));
-        /*
-        вариант без флага
-        
-        if (!basket) basket = [];
-        for (let item of basket) {
-            if (item.id == res.id) {
-                item.quantity = +item.quantity + +res.quantity;
-                localStorage.setItem('basket', JSON.stringify(basket));
-                return;
-            }
-        }
-        basket.push(res);
-        localStorage.setItem('basket', JSON.stringify(basket));
-        */
     });
     
     if ('.order') {
