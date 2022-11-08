@@ -16,7 +16,8 @@ function makeCalendar(fieldDate) {
     let tday = hlpdate.getDate();    
     
     if (fieldDate.match(/^\d{4}\-\d{2}\-\d{2}$/)) { 
-        hlpdate = new Date(fieldDate);
+        let [fd1, fd2, fd3] = fieldDate.split('-');
+        hlpdate = new Date(fd1, --fd2, fd3);
     }
     
     

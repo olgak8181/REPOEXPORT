@@ -310,6 +310,12 @@ $(function(){
                 $('form #phone').addClass('is-invalid').parents('.mb-3').append('<div class="invalid-feedback">Должен быть указан телефон!</div>');
                 valid = false;
             }
+            
+            if (!form.agree.checked) {
+                valid = false;
+            }
+            
+            
             if (valid) {
                 let products = [];
                 $('.table tbody tr').each(function(){
